@@ -1,0 +1,533 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9 oldie" lang="en"><![endif]-->
+<!--[if IE 10]><html class="no-js ie10 oldie" lang="en"><![endif]-->
+<!--[if gt IE 10]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Bank of Ireland</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+	
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+<!-- Header Start -->
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="twelvecol">
+				<div class="innerHeader">
+					<a href="/" title="Bank of Ireland" class="logo">
+						<img src="images/logo.svg" alt="Bank of Ireland" />
+					</a>
+					<nav>
+						<ul>
+							<li class="step1 completed">
+								<span class="number">1</span>
+								<span class="text">Your Home</span>
+							</li>
+							<li class="step2 completed">
+								<span class="number">2</span>
+								<span class="text">Your Quote</span>
+							</li>
+							<li class="step3 active">
+								<span class="number">3</span>
+								<span class="text">Your Cover</span>
+							</li>
+							<li class="step4">
+								<span class="number">4</span>
+								<span class="text">Payment</span>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- Header End -->
+
+<div class="clear"></div>
+
+<!-- Container Start -->
+<div class="container">
+	
+	<!-- Row Start -->
+	<div class="row">
+		<div class="twelvecol">
+
+			<h1 class="topHeading deskHead">Your Cover</h1>
+
+			<!-- Form Start -->
+			<form action="" method="" class="shadow">
+
+			<!-- Red Section Start -->
+
+				<div class="coverRedSection">
+					<p class="customerName">Hello <span>Kirk Dumford</span></p>
+					<p class="customerPolicy">Your Quote Ref: <span>M1094073</span></p>
+					<div class="clear"></div>
+				</div>
+
+			<!-- Red Section End -->
+
+			<!-- Included In This Section Start -->
+				<section class="includedCover">
+					<h2 class="innerHeading">Included In This Cover</h2>
+					<fieldset>
+					<div class="buildingsCover">
+						<label class="labelnoPad" for="">Buildings cover</label>
+						<div class="inputArea">
+							<p>&euro;175,000</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="contentsCover">
+						<label class="labelnoPad" for="">Contents cover</label>
+						<div class="inputArea">
+							<p>&euro;30,000</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="claimsExcess">
+						<label class="labelnoPad" for="">Claims excess</label>
+						<div class="inputArea">
+							<p>&euro;1,000</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="promoCodeRedeemed">
+						<label class="labelnoPad" for="">Promotional code redeemed</label>
+						<div class="inputArea">
+							<p>2013 Rugby Shirt</p>
+							<!-- (field will only display if promo is entered previously) -->
+						</div>
+						<div class="clear"></div>
+					</div>
+					<label></label>
+					<div class="inputArea">
+						<a title="Retrieve your existing quote" href="#">Edit Your Cover&nbsp;
+							<span class="icon-arrow-right"></span>
+						</a>
+					</div>
+					</fieldset>
+				</section>
+			<!-- Included In This Section End -->
+
+			<!-- Optional Cover End --> 
+				<section class="withShadow includedCover"> 
+					<h2 class="innerHeading">Optional Additional Covers</h2>
+					<fieldset>
+					<div class="contentsCover">
+						<label class="labelnoPad" for="">Accidental Damage on Contents</label>
+						<div class="inputArea">
+							<p>none</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="unspecifiedItemsCover">
+						<label class="labelnoPad" for="">Unspecified Items</label>
+						<div class="inputArea">
+							<p>&euro;3,000</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="specifiedItems">
+						<label class="labelnoPad" for="">Specified Items</label>
+						<div class="inputArea">
+							<p>&euro;2,000</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<label></label>
+					<div class="inputArea">
+						<a title="Retrieve your existing quote" href="#">Edit Your Cover&nbsp;
+							<span class="icon-arrow-right"></span>
+						</a>
+					</div>
+					</fieldset>
+				</section>
+			<!-- Optional Cover End -->
+
+				<section class="withShadow"> <!-- About your cover section -->
+					<h2 class="innerHeading">Policy start date</h2>
+					<fieldset>
+						<div class="datepicker">
+							<div id="datepicker"><!-- DatePicker --></div>
+						</div>
+					</fieldset> 
+				</section>
+				<section class="withShadow yourDetailsDisplay"> <!-- About your cover section -->
+					<h2 class="innerHeading">Your Details</h2>
+					<fieldset>
+					<div class="nameDetails">
+						<label class="labelnoPad" for="">Name</label>
+						<div class="inputArea">
+							<p>Kirk Durnford</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="emailDetails">
+						<label class="labelnoPad" for="">Please confirm your email for correspondance</label>
+						<div class="inputArea">
+							<input type="text" name="" value="vvwge@gjjiog.com" class="inputLarge">
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="ageDetails">
+						<label class="labelnoPad" for="">Age at policy start date</label>
+						<div class="inputArea">
+							<p>35</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<!-- Previous Insurer -->
+
+					<fieldset>
+						<label for="">Previous Insurer</label>
+						<div class="inputArea">
+							<select class="inputMedium">
+								<option>-- Please Select --</option>
+								<option value="Please Select" selected="">Please Select</option>
+								<option value="123">123</option>
+								<option value="AA">AA</option>
+								<option value="Allianz">Allianz</option>
+								<option value="Allied Irish Bank">Allied Irish Bank</option>
+								<option value="Amlin / JR Clare">Amlin / JR Clare</option>
+								<option value="Aviva/Hibernian">Aviva/Hibernian</option>
+								<option value="AXA">AXA</option>
+								<option value="Bank of Ireland">Bank of Ireland</option>
+								<option value="Cavendish">Cavendish</option>
+								<option value="Chubb">Chubb</option>
+								<option value="FBD">FBD</option>
+								<option value="Finsure">Finsure</option>
+								<option value="Insure.ie">Insure.ie</option>
+								<option value="One Direct/Post Office">One Direct/Post Office</option>
+								<option value="Premier">Premier</option>
+								<option value="Prestige">Prestige</option>
+								<option value="Quinn">Quinn</option>
+								<option value="RSA">RSA</option>
+								<option value="Ulster Bank">Ulster Bank</option>
+								<option value="Zurich/Eagle Star">Zurich/Eagle Star</option>
+								<option value="Other">Other</option>
+								<option value="No Previous Insurance">No Previous Insurance</option>
+							</select>
+						</div>
+					</fieldset>
+					<label></label>
+					<div class="inputArea">
+						<a title="Retrieve your existing quote" href="#">Edit Your Details&nbsp;
+							<span class="icon-arrow-right"></span>
+						</a>
+					</div>
+					</fieldset>
+
+				</section> 
+				<section class="withShadow yourPropertyDetails"> <!-- Your Property Details -->
+					<h2 class="innerHeading">Your Property Details</h2>
+					<fieldset>
+						<div class="mortgageProvider">
+							<label for="" class="labelnoPad">Who is your mortgage provider?</label>
+							<div class="inputArea">
+								<input type="radio" value="1" checked="checked" class="" name="horRadio" id="">
+								<label for="horRadio" class="radioHor">BoI</label>
+
+								<input type="radio" value="2" class="" name="horRadio" id="">
+								<label for="horRadio" class="radioHor">ICS</label>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="mortgageProvider">
+							<label class="labelnoPad" for="">Do you have a mortgage on the property?</label>
+						<div class="inputArea">
+							<input type="radio" value="3" class="" name="horRadio" id="">
+							<label for="horRadio" class="radioHor">Yes</label>
+
+							<input type="radio" value="4" class="" name="horRadio" id="">
+							<label for="horRadio" class="radioHor">No</label>
+						</div>
+						<div class="clear"></div>
+						</div>
+						<div class="ownershipDetails">
+							<label class="labelnoPad" for="">Ownership</label>
+							<div class="inputArea">
+								<p>Owner Occupied</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="typeOfProperty">
+							<label class="labelnoPad" for="">Type of Property</label>
+							<div class="inputArea">
+								<p>Detached</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="yearBuilt">
+							<label class="labelnoPad" for="">Year Built</label>
+							<div class="inputArea">
+								<p>2010</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="houseAlarm">
+							<label class="labelnoPad" for="">House Alarm</label>
+							<div class="inputArea">
+								<p>Yes - Monitored</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="noClaims">
+							<label class="labelnoPad" for="">Number of claims in last 5 years</label>
+							<div class="inputArea">
+								<p>None</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="propertyAddress">
+							<label class="labelnoPad" for="">Property Address</label>
+							<div class="inputArea">
+								<p>1 Grove House, Bettyglen, Raheny, Dublin 5</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="sameAddress">
+							<label for="" class="labelnoPad">Is your correspondence address the same as the property address above?</label>
+							<div class="inputArea">
+								<div class="vertRadio">
+								<input type="radio" value="5" class="correspondenceYes" checked="checked" name="horRadio" id="">
+								<label for="horRadio" class="radioHor correspondenceYes">Yes</label>
+
+								<input type="radio" value="6" class="correspondenceNo" autocomplete="off" name="horRadio" id="">
+								<label for="horRadio" class="radioHor correspondenceNo">No</label>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="correspondenceAddress">
+						<fieldset>
+							<label for="">House name (optional)</label>
+							<div class="inputArea">
+								<input type="text" class="inputLarge" name="" />
+							</div>
+						</fieldset>
+						<fieldset>
+							<label for="">Address Line 1</label>
+							<div class="inputArea">
+								<input type="text" class="inputLarge" name="" />
+							</div>
+						</fieldset>
+						<fieldset>
+							<label for="">Address Line 2</label>
+							<div class="inputArea">
+								<input type="text" class="inputLarge" name="" />
+							</div>
+						</fieldset>
+						<fieldset>
+							<label for="">Address Line 3</label>
+							<div class="inputArea">
+								<input type="text" class="inputLarge" name="" />
+							</div>
+						</fieldset>
+						<fieldset>
+							<label for="">County</label>
+							<div class="inputArea">
+								<select class="inputLarge">
+									<option>-- Please Select --</option>
+									<option value="Carlow">Carlow</option>
+									<option value="Cavan">Cavan</option>
+									<option value="Clare">Clare</option>
+									<option value="Cork">Cork</option>
+									<option value="Donegal">Donegal</option>
+									<option value="Dublin">Dublin</option>
+									<option value="Dublin 1">Dublin 1</option>
+									<option value="Dublin 2">Dublin 2</option>
+									<option value="Dublin 3">Dublin 3</option>
+									<option value="Dublin 4">Dublin 4</option>
+									<option value="Dublin 5">Dublin 5</option>
+									<option value="Dublin 6">Dublin 6</option>
+									<option value="Dublin 6W">Dublin 6W</option>
+									<option value="Dublin 7">Dublin 7</option>
+									<option value="Dublin 8">Dublin 8</option>
+									<option value="Dublin 9">Dublin 9</option>
+									<option value="Dublin 10">Dublin 10</option>
+									<option value="Dublin 11">Dublin 11</option>
+									<option value="Dublin 12">Dublin 12</option>
+									<option value="Dublin 13">Dublin 13</option>
+									<option value="Dublin 14">Dublin 14</option>
+									<option value="Dublin 15">Dublin 15</option>
+									<option value="Dublin 16">Dublin 16</option>
+									<option value="Dublin 17">Dublin 17</option>
+									<option value="Dublin 18">Dublin 18</option>
+									<option value="Dublin 20">Dublin 20</option>
+									<option value="Dublin 22">Dublin 22</option>
+									<option value="Dublin 24">Dublin 24</option>
+									<option value="Galway">Galway</option>
+									<option value="Kerry">Kerry</option>
+									<option value="Kildare">Kildare</option>
+									<option value="Kilkenny">Kilkenny</option>
+									<option value="Laois">Laois</option>
+									<option value="Leitrim">Leitrim</option>
+									<option value="Limerick">Limerick</option>
+									<option value="Longford">Longford</option>
+									<option value="Louth">Louth</option>
+									<option value="Mayo">Mayo</option>
+									<option value="Meath">Meath</option>
+									<option value="Monaghan">Monaghan</option>
+									<option value="Offaly">Offaly</option>
+									<option value="Roscommon">Roscommon</option>
+									<option value="Sligo">Sligo</option>
+									<option value="Tipperary">Tipperary</option>
+									<option value="Waterford">Waterford</option>
+									<option value="Westmeath">Westmeath</option>
+									<option value="Wexford">Wexford</option>
+									<option value="Wicklow">Wicklow</option>
+								</select>
+							</div>
+						</fieldset>
+						</div>
+						<label></label>
+					<div class="inputArea">
+						<a class="editYourPropertyDetails" href="#">Edit Your Property Details&nbsp;
+							<span class="icon-arrow-right"></span>
+						</a>
+					</div>
+					</fieldset>
+				</section> 
+				<section class="submitArea centerButton">
+					<input type="submit" value="Continue to Your Quote" name="submit" class="btn blueButton" />
+					<div class="clear"><!-- Clear --></div>
+				</section>
+
+			</form>
+			<!-- Form End -->
+
+		</div>
+	</div>
+	<!-- Row End -->
+
+	<div class="row">
+
+		<div class="twelvecol">
+
+			<section class="footerContents">
+
+				<div class="sixcol">
+					<div class="contactBox">
+						<form id="footerContactForm" action="" method="" class="shadow">
+							<section id="contactFormTop">
+								<a id="contactFormMainBtn" class="off">
+									<span>Contact &amp; Help<span class="icon-arrow-right"></span></span>
+									<img src="images/happy-call-centre-worker.png"/>
+								</a>
+							</section>
+							<section id="contactPanel1" class="topBorder">
+								<div class="contactDetails">
+									<p>If you need any help with your quote you can call us on</p>
+									<h4>0818 200 350</h4>
+									<p>9am - 5.30pm Mon to Fri</p>
+									<div class="buttonBox">
+											<a id="requestCallbackBtn" class="btn blueButton" title="Request Callback">Request A Callback</a>
+									</div>
+									
+									<div class="clear"><!-- Clear --></div>
+								</div>
+							</section>
+							<section id="contactPanel2" class="topBorder">
+								<fieldset> <!-- House Name question text field -->
+									<label for="contactName">Name</label>
+									<div class="inputArea">
+										<input type="text" class="inputLarge" name="contactName" />
+									</div>
+								</fieldset>
+								<fieldset> <!-- House Name question text field -->
+									<label for="contactPhone">Phone</label>
+									<div class="inputArea">
+										<input type="text" class="inputLarge" name="contactPhone" />
+									</div>
+								</fieldset>
+								<fieldset> <!-- House Name question text field -->
+									<label for="contactQuery">What is the query regarding?</label>
+									<div class="inputArea">
+										<textarea placeholder="What would you like to ask us?" cols="40" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset> <!-- House Name question text field -->
+									<label for="contactTime">What time should we call you?</label>
+									<div class="inputArea">
+										<select name="contactTime" class="inputLarge">
+											<option>Please Select</option>
+											<option>9.00 am</option>
+											<option>10.00 am</option>
+											<option>11.00 am</option>
+											<option>12.00 pm</option>
+											<option>1.00 pm</option>
+											<option>2.00 pm</option>
+											<option>3.00 pm</option>
+											<option>4.00 pm</option>
+											<option>5.00 pm</option>
+										</select>
+									</div>
+								</fieldset>
+							</section>
+							<section id="contactPanel3" class="submitArea centerButton">
+								<input type="submit" value="Send" name="submit" class="btn blueButton" />
+								<div class="clear"><!-- Clear --></div>
+							</section>
+							<section id="contactFormClose">
+								<a id="contactFormCloseBtn">Close</a>
+							</section>
+							<div class="clear"><!-- Clear --></div>
+						</form> <!-- close Footer Contact Form -->
+						<div class="clear"><!-- Clear --></div>
+					</div> <!-- close contact box -->
+				</div>
+
+				<div class="sixcol last">
+						<div class="finePrint">
+							<p>Home Insurance is provided by Bank of Ireland Insurance Services Limited. Bank of Ireland Insurance Services Limited is a member of the Bank of Ireland Group. Bank of Ireland Insurance Services Limited is regulated by the Central Bank of Ireland. Bank of Ireland Home Insurance is underwritten by RSA Insurance Ireland Limited. RSA Insurance Ireland Limited is regulated by the Central Bank of Ireland. Bank of Ireland Insurance Services Limited is tied to RSA Insurance Ireland Limited for the purpose of selling Home Insurance.</p>
+						</div>
+					</div>
+
+
+				<div class="clear"><!-- Clear --></div>
+
+		</section>
+
+		</div>
+
+	</div>
+
+
+</div>
+<!-- Container End -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</body>
+</html>

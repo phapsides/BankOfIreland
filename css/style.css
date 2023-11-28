@@ -1,0 +1,2502 @@
+/* CSS Resets */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none; }
+
+article, aside, figure, figure img, figcaption, hgroup, footer, header, nav, section, video, object {
+  display: block; }
+
+a img {
+  border: 0; }
+
+figure {
+  position: relative; }
+
+figure img {
+  width: 100%; }
+
+/* ==================================================================================================================== */
+/* ! VARIABLES
+/* ==================================================================================================================== */
+/* WIDTHS */
+/* FLOATS & ALIGNMENT **/
+/* MARGINS, PADDINGS & FONTS */
+@font-face {
+  font-family: 'GillSansWGL';
+  src: url("../webfonts/26EC81_0_0.eot");
+  src: url("../webfonts/26EC81_0_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/26EC81_0_0.woff") format("woff"), url("../webfonts/26EC81_0_0.ttf") format("truetype"); }
+
+/* FONT ICONS */
+@font-face {
+  font-family: "iconvault";
+  src: url("../webfonts/boi.eot");
+  src: url("../webfonts/boi.eot?#iefix") format("embedded-opentype"), url("../webfonts/boi.woff") format("woff"), url("../webfonts/boi.ttf") format("truetype"), url("../webfonts/boi.svg#iconvault") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.icon-arrow-right:before,
+.icon-tick:before,
+.icon-help-arrow:before,
+.icon-error:before,
+.icon-arrow-left:before,
+.icon-arrow-down:before {
+  font-family: "iconvault";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit; }
+
+.icon-arrow-right:before {
+  content: "\f100"; }
+
+.icon-tick:before {
+  content: "\f101"; }
+
+.icon-help-arrow:before {
+  content: "\f102"; }
+
+.icon-error:before {
+  content: "\f103"; }
+
+.icon-arrow-left:before {
+  content: "\f104"; }
+
+.icon-arrow-down:before {
+  content: "\f105"; }
+
+/* COLOR */
+/* ==================================================================================================================== */
+/* ! FUNCTIONS
+/* ==================================================================================================================== */
+/* ==================================================================================================================== */
+/* ! GRID
+/* ==================================================================================================================== */
+.container {
+  padding: 0 20px; }
+  .container .row {
+    width: 100%;
+    max-width: 960px;
+    min-width: 755px;
+    margin: 0 auto;
+    position: relative; }
+    .container .row .onecol, .container .row .twocol, .container .row .threecol, .container .row .fourcol, .container .row .fivecol, .container .row .sixcol, .container .row .sevencol, .container .row .eightcol, .container .row .ninecol, .container .row .tencol, .container .row .elevencol {
+      margin: 0 3.8% 0 0;
+      float: left;
+      min-height: 1px; }
+    .container .row .onecol {
+      width: 4.85%; }
+    .container .row .twocol {
+      width: 13.45%; }
+    .container .row .threecol {
+      width: 22.05%; }
+    .container .row .fourcol {
+      width: 30.75%; }
+    .container .row .fivecol {
+      width: 39.45%; }
+    .container .row .sixcol {
+      width: 48%; }
+    .container .row .sevencol {
+      width: 56.75%; }
+    .container .row .eightcol {
+      width: 65.4%; }
+    .container .row .ninecol {
+      width: 74.05%; }
+    .container .row .tencol {
+      width: 82.7%; }
+    .container .row .elevencol {
+      width: 91.35%; }
+    .container .row .twelvecol {
+      width: 100%;
+      float: left; }
+    .container .row .last {
+      margin: 0px; }
+    .container .row img, .container .row object, .container .row embed {
+      max-width: 100%; }
+    .container .row img {
+      height: auto; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* ==================================================================================================================== */
+/* ! GRID MEDIA Q.
+/* ==================================================================================================================== */
+@media only screen and (max-width: 790px) {
+  body {
+    font-size: 16px;
+    -webkit-text-size-adjust: none; }
+
+  body, .container {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0; }
+    body .row, .container .row {
+      width: 100%;
+      min-width: 0;
+      margin: 0;
+      padding: 0; }
+      body .row .onecol, body .row .twocol, body .row .threecol, body .row .fourcol, body .row .fivecol, body .row .sixcol, body .row .sevencol, body .row .eightcol, body .row .ninecol, body .row .tencol, body .row .elevencol, body .row .twelvecol, .container .row .onecol, .container .row .twocol, .container .row .threecol, .container .row .fourcol, .container .row .fivecol, .container .row .sixcol, .container .row .sevencol, .container .row .eightcol, .container .row .ninecol, .container .row .tencol, .container .row .elevencol, .container .row .twelvecol {
+        width: auto;
+        float: none;
+        margin: 0;
+        padding: 0 20px; } }
+@media only screen and (max-width: 573px) {
+  body .row .twelvecol, .container .row .twelvecol {
+    padding: 0; } }
+@media only screen and (max-width: 450px) {
+  body {
+    font-size: 16px;
+    -webkit-text-size-adjust: none; }
+
+  body, .container {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0; }
+    body .row, .container .row {
+      width: 100%;
+      min-width: 0;
+      margin: 0;
+      padding: 0; }
+      body .row .onecol, body .row .twocol, body .row .threecol, body .row .fourcol, body .row .fivecol, body .row .sixcol, body .row .sevencol, body .row .eightcol, body .row .ninecol, body .row .tencol, body .row .elevencol, .container .row .onecol, .container .row .twocol, .container .row .threecol, .container .row .fourcol, .container .row .fivecol, .container .row .sixcol, .container .row .sevencol, .container .row .eightcol, .container .row .ninecol, .container .row .tencol, .container .row .elevencol {
+        width: auto;
+        float: none;
+        margin: 0;
+        padding: 0 20px; }
+      body .row .twelvecol, .container .row .twelvecol {
+        padding: 0; } }
+/* ==================================================================================================================== */
+/* ! BASIC STYLES
+/* ==================================================================================================================== */
+body {
+  font-family: "Arial", sans-serif;
+  background: #e3f0f8 url("../images/bk.jpg") no-repeat top center; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Arial", sans-serif; }
+  h1.topHeading, h2.topHeading, h3.topHeading, h4.topHeading, h5.topHeading {
+    color: white;
+    padding: 1.3em 0; }
+  h1.innerHeading, h2.innerHeading, h3.innerHeading, h4.innerHeading, h5.innerHeading {
+    text-align: center;
+    padding: 1em 0;
+    color: #053c59;
+    font-size: 1.2em;
+    font-weight: bold; }
+  h1.labelStyle, h2.labelStyle, h3.labelStyle, h4.labelStyle, h5.labelStyle {
+    width: 50%;
+    text-align: right;
+    float: left;
+    margin: 1em 0;
+    padding-right: 1em; }
+
+.logo {
+  width: 100%;
+  height: 100%; }
+
+a {
+  text-decoration: none;
+  color: #053c59; }
+
+.clear {
+  clear: both; }
+
+header {
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f1f1f1));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, white 0%, #f1f1f1 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 );
+  /* IE6-9 */
+  display: block;
+  width: 100%;
+  float: left; }
+  header .innerHeader {
+    width: 100%; }
+    header .innerHeader a.logo {
+      text-align: left; }
+      header .innerHeader a.logo img {
+        margin: 1.17em 0; }
+    header .innerHeader nav {
+      float: right;
+      margin: 1.3em 0 0;
+      position: relative; }
+      header .innerHeader nav ul {
+        list-style: none;
+        z-index: 1; }
+        header .innerHeader nav ul li {
+          float: left;
+          margin: 0 0 0 1em;
+          position: relative; }
+          header .innerHeader nav ul li span {
+            color: #343435;
+            padding: 0.26em 0 0;
+            z-index: 1; }
+            header .innerHeader nav ul li span.number {
+              background: white;
+              width: 30px;
+              display: inline-block;
+              text-align: center;
+              height: 30px;
+              border-radius: 30px;
+              border: 1px solid #cccccc;
+              margin: 0 0.3em 0 0;
+              font-weight: bold; }
+          header .innerHeader nav ul li.active span {
+            font-weight: bold; }
+            header .innerHeader nav ul li.active span.number {
+              background: #00a4bf;
+              color: white;
+              border: 1px solid #00a4bf; }
+          header .innerHeader nav ul li.completed span.number {
+            color: #00a4bf; }
+
+form {
+  margin: 0;
+  background: white; }
+  form.shadow {
+    -webkit-box-shadow: 0px 0px 4px 0px #b5c2c9;
+    box-shadow: 0px 0px 4px 0px #b5c2c9;
+    border-radius: 4px;
+    -webkit-border-radius: 4px; }
+  form section {
+    clear: both;
+    padding: 1em 6em;
+    margin: 0; }
+    form section.withShadow {
+      background: #f0f0f0;
+      /* Old browsers */
+      /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YwZjBmMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE0JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+      background: -moz-linear-gradient(top, #f0f0f0 0%, white 14%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0f0f0), color-stop(14%, white));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #f0f0f0 0%, white 14%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #f0f0f0 0%, white 14%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #f0f0f0 0%, white 14%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, #f0f0f0 0%, white 14%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#ffffff',GradientType=0 );
+      /* IE6-8 */ }
+    form section article.redSection {
+      border-top: 1px dashed #e4753f;
+      border-bottom: 1px dashed #e4753f;
+      text-align: center;
+      margin: 1em 0; }
+      form section article.redSection a {
+        color: #343435;
+        padding: 1.5em;
+        display: block;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+        position: relative; }
+        form section article.redSection a:hover {
+          color: black; }
+        form section article.redSection a span.icon-arrow-right {
+          color: #e4753f;
+          position: absolute;
+          top: 25px;
+          font-size: 1.2em; }
+    form section fieldset {
+      padding: 1em 0;
+      clear: left; }
+      form section fieldset.hashtagFAIL {
+        background: #fae4e6;
+        padding: 1.5em; }
+        form section fieldset.hashtagFAIL span {
+          display: block;
+          padding: 0.5em 0 0;
+          font-size: 0.8em;
+          color: black;
+          font-weight: bold; }
+        form section fieldset.hashtagFAIL .inputArea input[type="text"],
+        form section fieldset.hashtagFAIL .inputArea input[type="email"],
+        form section fieldset.hashtagFAIL .inputArea input[type="password"],
+        form section fieldset.hashtagFAIL .inputArea select,
+        form section fieldset.hashtagFAIL .inputArea textarea {
+          border: 1px solid #cc0100; }
+        form section fieldset.hashtagFAIL .inputArea span.errorSpan {
+          color: #cc0100; }
+        form section fieldset.hashtagFAIL div a.show .showHelp {
+          display: block;
+          font-size: 1em;
+          padding: 0; }
+        form section fieldset.hashtagFAIL div a.show .hideHelp {
+          display: none;
+          font-size: 1em; }
+      form section fieldset label {
+        width: 50%;
+        float: left;
+        padding: 0.9em 1em 0 0;
+        text-align: right;
+        font-size: 1em;
+        color: #343435; }
+        form section fieldset label.labelnoPad {
+          padding: 1px 10px 0 0;
+          margin-bottom: 1em; }
+      form section fieldset div {
+        position: relative; }
+        form section fieldset div.inputArea {
+          width: 50%;
+          float: right;
+          position: relative; }
+          form section fieldset div.inputArea input[type="text"],
+          form section fieldset div.inputArea input[type="email"],
+          form section fieldset div.inputArea input[type="password"],
+          form section fieldset div.inputArea select,
+          form section fieldset div.inputArea textarea {
+            padding: 0.7em;
+            font-size: 0.9em;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -ms-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            border: 1px solid #cccccc;
+            font-family: "Arial", sans-serif;
+            color: #343435; }
+            form section fieldset div.inputArea input[type="text"]:focus,
+            form section fieldset div.inputArea input[type="email"]:focus,
+            form section fieldset div.inputArea input[type="password"]:focus,
+            form section fieldset div.inputArea select:focus,
+            form section fieldset div.inputArea textarea:focus {
+              border: 1px solid #00a4bf; }
+            form section fieldset div.inputArea input[type="text"].inputxSmall,
+            form section fieldset div.inputArea input[type="email"].inputxSmall,
+            form section fieldset div.inputArea input[type="password"].inputxSmall,
+            form section fieldset div.inputArea select.inputxSmall,
+            form section fieldset div.inputArea textarea.inputxSmall {
+              width: 22%; }
+            form section fieldset div.inputArea input[type="text"].inputDay,
+            form section fieldset div.inputArea input[type="email"].inputDay,
+            form section fieldset div.inputArea input[type="password"].inputDay,
+            form section fieldset div.inputArea select.inputDay,
+            form section fieldset div.inputArea textarea.inputDay {
+              width: 16%;
+              text-align: center; }
+            form section fieldset div.inputArea input[type="text"].inputMonth,
+            form section fieldset div.inputArea input[type="email"].inputMonth,
+            form section fieldset div.inputArea input[type="password"].inputMonth,
+            form section fieldset div.inputArea select.inputMonth,
+            form section fieldset div.inputArea textarea.inputMonth {
+              width: 16%;
+              text-align: center; }
+            form section fieldset div.inputArea input[type="text"].inputYear,
+            form section fieldset div.inputArea input[type="email"].inputYear,
+            form section fieldset div.inputArea input[type="password"].inputYear,
+            form section fieldset div.inputArea select.inputYear,
+            form section fieldset div.inputArea textarea.inputYear {
+              width: 26.1%;
+              text-align: center; }
+            form section fieldset div.inputArea input[type="text"].inputSmall,
+            form section fieldset div.inputArea input[type="email"].inputSmall,
+            form section fieldset div.inputArea input[type="password"].inputSmall,
+            form section fieldset div.inputArea select.inputSmall,
+            form section fieldset div.inputArea textarea.inputSmall {
+              width: 40%; }
+            form section fieldset div.inputArea input[type="text"].inputMedium,
+            form section fieldset div.inputArea input[type="email"].inputMedium,
+            form section fieldset div.inputArea input[type="password"].inputMedium,
+            form section fieldset div.inputArea select.inputMedium,
+            form section fieldset div.inputArea textarea.inputMedium {
+              width: 60%; }
+            form section fieldset div.inputArea input[type="text"].inputLarge,
+            form section fieldset div.inputArea input[type="email"].inputLarge,
+            form section fieldset div.inputArea input[type="password"].inputLarge,
+            form section fieldset div.inputArea select.inputLarge,
+            form section fieldset div.inputArea textarea.inputLarge {
+              width: 100%; }
+          form section fieldset div.inputArea select {
+            background: #ffffff;
+            /* Old browsers */
+            background: -moz-linear-gradient(top, white 0%, #f1f1f1 100%);
+            /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f1f1f1));
+            /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, white 0%, #f1f1f1 100%);
+            /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, white 0%, #f1f1f1 100%);
+            /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, white 0%, #f1f1f1 100%);
+            /* IE10+ */
+            background: linear-gradient(to bottom, white 0%, #f1f1f1 100%);
+            /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 );
+            /* IE6-9 */ }
+          form section fieldset div.inputArea input[type="checkbox"] {
+            margin: 0 0; }
+          form section fieldset div.inputArea label.radioHor {
+            margin: 0 2em 0 0;
+            float: none; }
+          form section fieldset div.inputArea span.underText {
+            display: block;
+            font-size: 0.8em;
+            padding: 0.5em 0 0;
+            color: #343435; }
+        form section fieldset div .vertRadio {
+          margin: 0 0 5px; }
+        form section fieldset div a.show, form section fieldset div a.hide {
+          font-size: 0.85em;
+          text-decoration: none;
+          text-align: right;
+          display: block;
+          margin: 0.8em 0; }
+        form section fieldset div a.show {
+          position: relative; }
+          form section fieldset div a.show .showHelp {
+            display: block;
+            padding: 0 1em 0 0; }
+            form section fieldset div a.show .showHelp span.icon-arrow-right {
+              padding: 2px 0 0;
+              color: #e4753f;
+              font-size: 1.3em;
+              position: absolute;
+              top: -2px; }
+          form section fieldset div a.show .hideHelp {
+            display: none;
+            padding: 0 1.2em 0 0; }
+            form section fieldset div a.show .hideHelp span.icon-arrow-down {
+              color: #e4753f;
+              position: absolute;
+              font-size: 1.3em;
+              top: 0px; }
+        form section fieldset div .slidingDiv {
+          display: none;
+          position: relative;
+          margin: 1em 0 0;
+          padding: 1em;
+          background: #053c59;
+          color: white;
+          border-radius: 4px;
+          -webkit-border-radius: 4px; }
+          form section fieldset div .slidingDiv p {
+            font-size: 0.8em; }
+          form section fieldset div .slidingDiv .icon-help-arrow {
+            position: absolute;
+            top: -10px;
+            right: 39px;
+            width: 14px;
+            height: 6px;
+            display: block;
+            color: #053c59; }
+    form section.submitArea {
+      padding: 2em 0;
+      margin: 0 6em;
+      border-top: 1px dashed #e4753f; }
+      form section.submitArea.centerButton {
+        text-align: center; }
+        form section.submitArea.centerButton input[type="submit"] {
+          width: 40%;
+          margin: 0 auto;
+          float: none; }
+      form section.submitArea input[type="submit"] {
+        float: right;
+        padding: 0.5em 3em 0.6em;
+        font-size: 1.3em;
+        cursor: pointer;
+        border: 0 none;
+        font-family: "Arial", sans-serif;
+        font-weight: bold; }
+      form section.submitArea a.back {
+        float: left;
+        margin: 0.5em 0 0;
+        padding: 0.5em 3em; }
+
+/* DATE PICKER STYLES */
+.datepicker {
+  width: 50%;
+  margin: 0 auto; }
+
+img.ui-datepicker-trigger {
+  margin-left: 10px;
+  cursor: pointer; }
+
+.ui-datepicker {
+  background: white;
+  font-family: "Arial", sans-serif;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0.5em 0;
+  display: none; }
+  .ui-datepicker .ui-datepicker-header {
+    background: #053c59;
+    color: white;
+    border-radius: 4px 4px 0 0;
+    padding: 1em 0 0; }
+    .ui-datepicker .ui-datepicker-header .ui-corner-all {
+      width: 50%;
+      display: inline-block;
+      cursor: pointer; }
+      .ui-datepicker .ui-datepicker-header .ui-corner-all.ui-datepicker-prev {
+        text-align: left;
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        color: #e4753f;
+        z-index: 999; }
+      .ui-datepicker .ui-datepicker-header .ui-corner-all.ui-datepicker-next {
+        text-align: right;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: #e4753f;
+        z-index: 999; }
+    .ui-datepicker .ui-datepicker-header .ui-datepicker-title {
+      text-align: center;
+      margin: -3px 0 0;
+      padding: 0 0 16px;
+      z-index: 1; }
+  .ui-datepicker .ui-datepicker-calendar {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse; }
+    .ui-datepicker .ui-datepicker-calendar thead tr th {
+      width: 32px;
+      padding: 0.2em 0; }
+      .ui-datepicker .ui-datepicker-calendar thead tr th span {
+        font-weight: normal; }
+    .ui-datepicker .ui-datepicker-calendar tbody tr {
+      text-align: center; }
+      .ui-datepicker .ui-datepicker-calendar tbody tr td {
+        padding: 0;
+        margin: 0;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+        border-bottom: 1px solid #cccccc;
+        border-right: 1px solid #cccccc;
+        cursor: pointer; }
+        .ui-datepicker .ui-datepicker-calendar tbody tr td:hover {
+          border-radius: 2px;
+          font-weight: bold;
+          background: #00a4bf;
+          opacity: 0.6; }
+          .ui-datepicker .ui-datepicker-calendar tbody tr td:hover a {
+            color: white; }
+        .ui-datepicker .ui-datepicker-calendar tbody tr td.ui-datepicker-week-end:last-child {
+          border-right: 0px; }
+        .ui-datepicker .ui-datepicker-calendar tbody tr td a {
+          display: block;
+          padding: 0.5em 0; }
+          .ui-datepicker .ui-datepicker-calendar tbody tr td a.ui-state-highlight {
+            font-weight: bold; }
+          .ui-datepicker .ui-datepicker-calendar tbody tr td a.ui-state-active {
+            background: #00a4bf;
+            color: white; }
+      .ui-datepicker .ui-datepicker-calendar tbody tr:last-child td {
+        border-bottom: 0px; }
+
+/* BUTTONS */
+.buttonBox {
+  float: right;
+  width: 50%;
+  position: relative; }
+
+.btn.innerForm {
+  padding: 0.5em 3em;
+  display: block;
+  float: left; }
+.btn.blueButton {
+  background: #00a4bf;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYTRiZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDhlYTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #00a4bf 0%, #008ea8 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00a4bf), color-stop(100%, #008ea8));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #00a4bf 0%, #008ea8 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #00a4bf 0%, #008ea8 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #00a4bf 0%, #008ea8 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #00a4bf 0%, #008ea8 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00a4bf', endColorstr='#008ea8',GradientType=0 );
+  /* IE6-8 */
+  color: white;
+  text-shadow: 0 1px 0 #004956;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  font-weight: bold;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+  .btn.blueButton:hover {
+    opacity: 0.8; }
+
+.emailCheck fieldset {
+  padding: 0; }
+  .emailCheck fieldset div.inputArea {
+    padding: 0.5em 0; }
+.emailCheck a {
+  cursor: pointer; }
+
+.readMoreLink {
+  cursor: pointer; }
+  .readMoreLink:hover {
+    text-decoration: underline; }
+
+.vertRadio > input {
+  position: relative;
+  z-index: 20; }
+
+form section fieldset div {
+  position: relative;
+  z-index: 10; }
+
+/* Quote Summary page box styles */
+.sixteenth {
+  width: 13.45%; }
+
+.thirds {
+  width: 22.05%; }
+
+.quarters {
+  width: 30.75%; }
+
+.fifths {
+  width: 39.45%; }
+
+.halfs {
+  width: 48%; }
+
+.threeQuarters {
+  width: 65.4%; }
+
+.wholes {
+  width: 100%;
+  float: left; }
+
+.sixteenth, .thirds, .quarters, .fifths, .halfs, .threeQuarters, .wholes {
+  margin: 0 3.8% 0 0;
+  float: left;
+  min-height: 1px; }
+
+form .wholes section.submitArea.centerButton input[type="submit"] {
+  width: auto; }
+
+.wholes .btn {
+  margin: 0 auto;
+  max-width: 300px; }
+
+/* close Quote Summary page box styles */
+.deskHead {
+  display: block; }
+
+.mobHead {
+  display: none; }
+
+/* page banner styles */
+.bannerSection a {
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f1f1f1));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, white 0%, #f1f1f1 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 );
+  /* IE6-9 */
+  margin: 1em 0 2em 0;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  z-index: 10; }
+  .bannerSection a .bG-image {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 11;
+    background-image: url(../images/30pctDiscountBannerImage_edit.png);
+    background-position: top left;
+    background-size: auto 100%;
+    background-repeat: no-repeat; }
+.bannerSection p {
+  position: relative;
+  z-index: 12;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #053c59;
+  width: 45%;
+  padding: 0 0.5em;
+  text-align: center;
+  float: right;
+  margin-right: 5em; }
+  .bannerSection p span {
+    color: #00a4bf; }
+
+.radioThreeBTns div label {
+  width: auto;
+  padding: 0; }
+
+form section fieldset.BOISpecialField {
+  background: #00a4bf;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #00a4bf 0%, #053d5a 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00a4bf), color-stop(100%, #053d5a));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #00a4bf 0%, #053d5a 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #00a4bf 0%, #053d5a 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #00a4bf 0%, #053d5a 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #00a4bf 0%, #053d5a 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00a4bf', endColorstr='#053d5a',GradientType=0 );
+  /* IE6-9 */
+  border-radius: 5px;
+  margin: 0em 0 1em 0;
+  padding: 1.5em 0; }
+  form section fieldset.BOISpecialField label.labelnoPad, form section fieldset.BOISpecialField label.radioHor {
+    color: white; }
+  form section fieldset.BOISpecialField a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 300px; }
+    form section fieldset.BOISpecialField a img {
+      position: relative;
+      margin: 0 0 0.5em 0; }
+
+.dcAgreementChecks h3 {
+  text-align: center;
+  font-weight: normal;
+  margin: 1em 0;
+  color: #343435;
+  font-size: 1em; }
+.dcAgreementChecks .dcPolicyDocumentAgreementList {
+  padding: 0 0 1em 0;
+  margin-bottom: 1em;
+  border-bottom: 1px dashed #e4753f; }
+  .dcAgreementChecks .dcPolicyDocumentAgreementList a {
+    font-size: 0.9em;
+    margin-right: 2em; }
+    .dcAgreementChecks .dcPolicyDocumentAgreementList a:hover {
+      text-decoration: underline; }
+.dcAgreementChecks fieldset {
+  position: relative;
+  margin: 1em 0 2em 0;
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f1f1f1));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, white 0%, #f1f1f1 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 );
+  /* IE6-9 */
+  padding: 1em 1em 0.5em 1em;
+  border: 1px solid #cccccc;
+  border-radius: 5px; }
+  .dcAgreementChecks fieldset input {
+    float: left;
+    margin-right: 1em; }
+  .dcAgreementChecks fieldset label {
+    float: left;
+    text-align: left;
+    width: 60%;
+    font-size: 0.9em; }
+.dcAgreementChecks .txtMask {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, white));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-8 */
+  position: absolute;
+  z-index: 20;
+  height: 4em;
+  top: 4.9375em;
+  left: 0;
+  width: 90%;
+  margin: 0 2em; }
+.dcAgreementChecks .dcEligibility {
+  position: relative;
+  border: 1px solid #cccccc;
+  background: white;
+  border-radius: 5px;
+  height: 8em;
+  padding: 1em 1em 0 1em;
+  border-radius: 5px;
+  overflow-y: scroll;
+  margin-bottom: 1em;
+  z-index: 15; }
+  .dcAgreementChecks .dcEligibility h4 {
+    margin-bottom: 0.5em;
+    color: #053c59; }
+  .dcAgreementChecks .dcEligibility p {
+    font-size: 0.8em; }
+  .dcAgreementChecks .dcEligibility h4, .dcAgreementChecks .dcEligibility p {
+    position: relative;
+    z-index: 14; }
+.dcAgreementChecks .disclaimerText {
+  padding-bottom: 1em;
+  font-size: 0.8em;
+  color: #343435; }
+
+.container .row .footerContents {
+  margin-top: 1em;
+  padding-bottom: 2em; }
+  .container .row .footerContents .finePrint {
+    float: left;
+    margin-top: 1.5em;
+    margin-right: 1.8%;
+    width: 80%; }
+    .container .row .footerContents .finePrint p {
+      font-size: 0.7em; }
+
+.contactBox {
+  margin-top: 1.5em;
+  width: 80%;
+  float: right;
+  max-width: 300px; }
+
+form#footerContactForm {
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 #B5C2C9; }
+  form#footerContactForm section {
+    padding: 1em; }
+    form#footerContactForm section.topBorder {
+      border-top: 1px dashed #e4753f; }
+    form#footerContactForm section#contactFormTop {
+      position: relative;
+      padding: 0 1em; }
+      form#footerContactForm section#contactFormTop a {
+        position: relative;
+        z-index: 20;
+        display: block;
+        width: 100%;
+        padding: 2.35em 0;
+        cursor: pointer; }
+        form#footerContactForm section#contactFormTop a img {
+          position: absolute;
+          right: -1em;
+          top: -0.95em;
+          border-radius: 0 0 4px 0; }
+        form#footerContactForm section#contactFormTop a.on img {
+          border-radius: 0; }
+        form#footerContactForm section#contactFormTop a span {
+          position: relative;
+          z-index: 10;
+          display: block;
+          font-size: 1.2em;
+          font-weight: bold; }
+          form#footerContactForm section#contactFormTop a span .icon-arrow-right {
+            position: relative;
+            top: 4px;
+            display: inline-block;
+            color: #e4753f; }
+    form#footerContactForm section.submitArea {
+      border: none;
+      margin: 0 1em; }
+      form#footerContactForm section.submitArea input[type="submit"] {
+        width: auto; }
+  form#footerContactForm fieldset {
+    width: 100%; }
+    form#footerContactForm fieldset label {
+      float: none;
+      width: 100%;
+      display: block;
+      text-align: left;
+      margin-bottom: 0.5em;
+      padding-top: 0; }
+    form#footerContactForm fieldset div.inputArea {
+      width: 100%; }
+      form#footerContactForm fieldset div.inputArea input {
+        float: none;
+        width: 100%; }
+      form#footerContactForm fieldset div.inputArea textarea {
+        width: 100%; }
+  form#footerContactForm #contactFormClose {
+    text-align: center;
+    padding-bottom: 2em; }
+    form#footerContactForm #contactFormClose #contactFormCloseBtn {
+      display: inline-block;
+      cursor: pointer; }
+
+.contactDetails a, .contactDetails p, .contactDetails h4 {
+  text-align: center; }
+.contactDetails p {
+  padding: 0 2em;
+  margin-bottom: 1em; }
+.contactDetails h4 {
+  color: #053c59;
+  font-size: 1.75em;
+  margin-bottom: 0.5em; }
+.contactDetails .buttonBox {
+  width: 100%;
+  text-align: center; }
+  .contactDetails .buttonBox a {
+    position: relative;
+    display: inline-block;
+    padding: 0.75em 2em;
+    cursor: pointer; }
+
+.first {
+  padding: 0; }
+
+.innerHeading {
+  padding-bottom: 0.5em; }
+
+form section fieldset.addressLookupOutput .inputArea {
+  padding: 1em 0 1em 1em;
+  border: 1px solid #cccccc; }
+  form section fieldset.addressLookupOutput .inputArea p {
+    margin: 1em 0; }
+  form section fieldset.addressLookupOutput .inputArea p.addressLines {
+    margin: 0.5em 0; }
+  form section fieldset.addressLookupOutput .inputArea div {
+    margin: 0.5em 0; }
+    form section fieldset.addressLookupOutput .inputArea div label {
+      margin: 0; }
+
+.jointOwn {
+  margin-bottom: 1em; }
+
+.researchAddress {
+  cursor: pointer; }
+  .researchAddress:hover {
+    text-decoration: underline; }
+  .researchAddress.tBorder {
+    margin-top: 1em;
+    padding-top: 1em;
+    display: block;
+    margin-right: 1em;
+    border-top: 1px dashed #e4753f; }
+
+form section fieldset.BOISpecialField .promoCodeField fieldset {
+  padding-top: 0; }
+form section fieldset.BOISpecialField .promoCodeField div.inputArea input[type='text'] {
+  width: 70%;
+  margin-right: 30%; }
+
+.promoCodeField {
+  clear: both; }
+
+form section div.carPromoFields {
+  clear: both; }
+  form section div.carPromoFields fieldset {
+    padding-top: 0; }
+    form section div.carPromoFields fieldset label {
+      color: white;
+      padding-top: 0; }
+      form section div.carPromoFields fieldset label.downPadSmall {
+        padding-top: 0.6em; }
+    form section div.carPromoFields fieldset div.inputArea input[type='text'] {
+      width: 70%;
+      margin-right: 30%; }
+
+.noPad {
+  padding-bottom: 0; }
+
+#claimLinkedQuestion {
+  padding: 0.5em 0 1em 0;
+  margin-bottom: 1em;
+  border-bottom: 1px dashed #e4753f; }
+  #claimLinkedQuestion h3 {
+    color: #053c59; }
+
+.customerDetails {
+  padding: 1.5em; }
+  .customerDetails p {
+    width: 50%;
+    float: left;
+    font-size: 1em;
+    color: #343435; }
+    .customerDetails p.customerName {
+      text-align: left; }
+    .customerDetails p.customerPolicy {
+      text-align: right; }
+      .customerDetails p.customerPolicy span {
+        font-weight: bold; }
+
+.quoteSummary {
+  background: #053c59;
+  padding: 2em 0;
+  color: white; }
+  .quoteSummary .price, .quoteSummary .per {
+    font-weight: bold;
+    text-align: right;
+    padding: 0 0.5em 0 0;
+    border-right: 1px solid white; }
+  .quoteSummary .price {
+    font-size: 3em; }
+  .quoteSummary .per {
+    font-size: 1.3em;
+    padding: 0 1.2em 0 0; }
+  .quoteSummary .payOption {
+    font-weight: bold;
+    width: 50%;
+    font-size: 1.2em;
+    max-width: 140px;
+    padding: 1.2em 0;
+    line-height: 1.5em; }
+  .quoteSummary .payOptionPrice {
+    width: 50%;
+    margin: 1.2em auto;
+    padding: 1.5em 0 1.2em 0;
+    border-top: 1px dashed #e4753f;
+    text-align: center;
+    font-weight: bold; }
+
+.pricingDetailsLink {
+  display: block;
+  text-align: center; }
+  .pricingDetailsLink span {
+    position: relative;
+    top: 2px;
+    font-size: 1.1em;
+    color: #e4753f; }
+
+.quoteSummary .pricingDetailsLink {
+  color: white; }
+
+.quoteResultSection .pricingDetailsLink {
+  color: #053c59; }
+
+.coverIncludes .eightcol {
+  margin: 0; }
+.coverIncludes .buildCvr {
+  padding-top: 0; }
+
+.buildCvr, .contentCvr {
+  margin-right: 2em;
+  float: left;
+  padding: 0 0 1em 0;
+  color: #343435; }
+  .buildCvr span, .contentCvr span {
+    margin-left: 0.2em;
+    font-weight: bold; }
+
+.clearButton {
+  display: block;
+  width: 100%;
+  padding: 0.5em 0;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #00a4bf;
+  border: 1px solid #00a4bf;
+  border-radius: 3px;
+  background: white;
+  text-shadow: -2 2px 1px #fff; }
+  .clearButton:hover {
+    background: #00a4bf;
+    /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYTRiZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDhlYTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #00a4bf 0%, #008ea8 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00a4bf), color-stop(100%, #008ea8));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #00a4bf 0%, #008ea8 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #00a4bf 0%, #008ea8 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #00a4bf 0%, #008ea8 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #00a4bf 0%, #008ea8 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00a4bf', endColorstr='#008ea8',GradientType=0 );
+    /* IE6-8 */
+    color: white;
+    text-shadow: 0 1px 0 #004956;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    font-weight: bold;
+    text-shadow: -2 2px 1px #666; }
+
+.qsNudgeMessage {
+  margin: 0.5em 0 1em 0;
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #cccccc;
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f1f1f1));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 0%, #f1f1f1 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, white 0%, #f1f1f1 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 );
+  /* IE6-9 */
+  border-radius: 2px;
+  -webkit-border-radius: 2px; }
+  .qsNudgeMessage .innerHeading {
+    padding: 0 0 0.5em 0; }
+  .qsNudgeMessage p {
+    font-size: 0.9em;
+    color: #343435;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto; }
+
+.serratedEdge {
+  height: 8px;
+  width: 100%;
+  background-image: url(../images/blueFringe.png);
+  background-repeat: repeat-x; }
+
+.additionalCoverSection, .unspecifiedItemSection, .specifiedItemSection {
+  padding: 0 0 1em 0; }
+
+.additionalCoverSection, .unspecifiedItemSection {
+  border-bottom: 1px dashed #e4753f; }
+
+.additionalCoverSection .innerHeading,
+.unspecifiedItemSection .innerHeading,
+.specifiedItemSection .innerHeading {
+  margin-bottom: 1em; }
+.additionalCoverSection .row,
+.unspecifiedItemSection .row,
+.specifiedItemSection .row {
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  border-bottom: 1px dashed #e4753f; }
+.additionalCoverSection h4,
+.unspecifiedItemSection h4,
+.specifiedItemSection h4 {
+  color: #053c59;
+  margin-bottom: 1em; }
+.additionalCoverSection p,
+.unspecifiedItemSection p,
+.specifiedItemSection p {
+  color: #343435; }
+
+.addSpecItemMain h4 {
+  color: #053c59;
+  margin-bottom: 1em; }
+
+.disclaimerSection .wholes {
+  border-top: 1px dashed #e4753f; }
+
+.disclaimer {
+  width: 60%;
+  margin: 0 20% 2em 20%;
+  padding-top: 2em;
+  font-size: 0.8em;
+  text-align: center; }
+
+.readMoreLink {
+  margin: 0.5em 0;
+  color: #053c59;
+  font-size: 0.9em;
+  display: block; }
+  .readMoreLink span .icon-arrow-right {
+    color: #e4753f;
+    position: relative;
+    top: 2px; }
+
+form section.excessSection fieldset {
+  padding-top: 0; }
+  form section.excessSection fieldset div.inputArea {
+    width: auto;
+    float: none; }
+
+.hiddenQuestion {
+  padding: 0; }
+
+.quoteResultSection .halfs {
+  padding-bottom: 1em;
+  border-bottom: 1px dashed #e4753f; }
+.quoteResultSection .wholes {
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+  border-bottom: 1px dashed #e4753f; }
+.quoteResultSection .btn {
+  width: 25%;
+  min-width: 250px;
+  margin: 1em auto; }
+  .quoteResultSection .btn .submitArea .btn {
+    min-width: 300px; }
+.quoteResultSection p {
+  text-align: center;
+  color: #343435; }
+.quoteResultSection .littleHeader {
+  font-size: 0.9em;
+  color: #053c59;
+  font-weight: bold;
+  margin-bottom: 0.5em; }
+.quoteResultSection span {
+  font-weight: bold; }
+.quoteResultSection .strong {
+  font-weight: bold; }
+.quoteResultSection .sixcol {
+  border-bottom: 1px dashed #e4753f;
+  padding: 1em 0 2em 0; }
+.quoteResultSection .docListBox .sixcol {
+  border: none; }
+.quoteResultSection .smallText {
+  font-size: 0.9em;
+  color: #053c59; }
+.quoteResultSection .bigText {
+  font-size: 2em;
+  font-weight: bold;
+  color: #053c59; }
+.quoteResultSection .symbol {
+  font-size: 2em;
+  font-weight: bold;
+  color: #e4753f; }
+.quoteResultSection .submitArea {
+  border-top: none; }
+.quoteResultSection .documentlistHead {
+  font-weight: bold;
+  font-size: 0.9em;
+  margin: 1em 0;
+  text-align: center; }
+
+.documentlistHead {
+  font-weight: bold;
+  font-size: 0.9em;
+  margin: 1em 0;
+  text-align: center; }
+
+.documentList {
+  list-style-type: none;
+  float: left;
+  text-align: center;
+  width: 45%;
+  margin: 0 2.5%; }
+  .documentList li {
+    font-size: 0.9em;
+    margin-bottom: 1em; }
+
+.continueLinkSection section.submitArea {
+  border-top: none;
+  border-bottom: 1px dashed #e4753f; }
+
+.emailCheck {
+  padding: 1em 1em;
+  text-align: center;
+  color: #343435;
+  background: #cccccc;
+  font-size: 0.9em;
+  border-radius: 4px;
+  -webkit-border-radius: 4px; }
+  .emailCheck span {
+    font-weight: bold; }
+  .emailCheck a {
+    color: #053c59; }
+    .emailCheck a:hover {
+      text-decoration: none;
+      text-decoration: underline; }
+
+.innerSectionNoPad {
+  padding: 0 6em; }
+
+.quoteResultExtra .halfs {
+  margin-bottom: 1em; }
+.quoteResultExtra .sixcol {
+  border: none;
+  padding-bottom: 0; }
+.quoteResultExtra .twelvecol {
+  border: none; }
+.quoteResultExtra p {
+  margin: 1em 0;
+  text-align: center; }
+  .quoteResultExtra p.italic {
+    font-style: italic;
+    font-size: 0.8em; }
+
+.littleHeader {
+  font-size: 0.9em;
+  color: #053c59;
+  font-weight: bold;
+  margin-bottom: 0.5em; }
+
+.unSpecItemField div.inputArea {
+  width: 100%; }
+
+.removeItemlink {
+  float: right;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin: 1em 0 0 0; }
+
+.activeCoverText {
+  position: relative; }
+  .activeCoverText span {
+    font-family: "iconvault";
+    font-size: 1.2em;
+    display: inline-block;
+    color: #00a4bf;
+    position: absolute;
+    left: -30%; }
+    .activeCoverText span:before {
+      line-height: 0; }
+
+#contenitore_generale {
+  border-bottom: 1px dashed #343435; }
+
+.specItemEntryBox {
+  width: 100%;
+  padding: 0; }
+  .specItemEntryBox .inputArea {
+    width: 100%; }
+  .specItemEntryBox .removeSpecItem {
+    float: right;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin: 1em 0; }
+    .specItemEntryBox .removeSpecItem .icon-arrow-right {
+      position: relative;
+      top: 2px; }
+
+.specItemAddRemoveBox {
+  width: 100%;
+  padding: 1em 0 1.5em 0; }
+  .specItemAddRemoveBox #aggiungiInput {
+    position: relative;
+    display: inline-block;
+    color: #053c59;
+    margin-top: 1em;
+    cursor: pointer; }
+    .specItemAddRemoveBox #aggiungiInput .icon-arrow-right {
+      position: relative;
+      top: 2px;
+      color: #e4753f; }
+
+#updatePremiumBtn {
+  cursor: pointer; }
+
+.listEditItem {
+  cursor: pointer; }
+
+.specItemsTotals {
+  width: 100%;
+  padding: 1em 0; }
+  .specItemsTotals .removeAllItem {
+    margin-top: 1em;
+    float: right;
+    font-size: 0.9em;
+    cursor: pointer; }
+  .specItemsTotals p {
+    margin-bottom: 1em; }
+  .specItemsTotals ul {
+    width: 100%;
+    list-style-type: none;
+    margin-bottom: 0.5em; }
+    .specItemsTotals ul li {
+      width: 100%;
+      padding: 0 0 0.5em 0;
+      clear: both; }
+      .specItemsTotals ul li span {
+        display: inline-block;
+        width: 50%; }
+
+form section fieldset.addressLookupOutput div.inputArea div.addressUnConfirmed fieldset {
+  padding: 0; }
+  form section fieldset.addressLookupOutput div.inputArea div.addressUnConfirmed fieldset label {
+    text-align: left;
+    width: 100%;
+    padding: 0; }
+  form section fieldset.addressLookupOutput div.inputArea div.addressUnConfirmed fieldset div.inputArea {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin-bottom: 1em; }
+    form section fieldset.addressLookupOutput div.inputArea div.addressUnConfirmed fieldset div.inputArea select {
+      width: 90%; }
+
+/* Cover Styles */
+.coverRedSection {
+  border-bottom: 1px dashed #e4753f;
+  margin: 0 1em; }
+  .coverRedSection p {
+    width: 50%;
+    float: left;
+    font-size: 1em;
+    color: #343435;
+    padding: 1em 0; }
+    .coverRedSection p.customerName {
+      text-align: left; }
+    .coverRedSection p.customerPolicy {
+      text-align: right; }
+      .coverRedSection p.customerPolicy span {
+        font-weight: bold; }
+
+.container .includedCover,
+.container .yourDetailsDisplay,
+.container .yourPropertyDetails {
+  padding-top: 0.5em;
+  padding-bottom: 0; }
+  .container .includedCover .inputArea p,
+  .container .yourDetailsDisplay .inputArea p,
+  .container .yourPropertyDetails .inputArea p {
+    font-weight: bold;
+    margin-left: 0.5em;
+    margin-top: 0.05em; }
+  .container .includedCover a,
+  .container .yourDetailsDisplay a,
+  .container .yourPropertyDetails a {
+    color: #343435;
+    display: block;
+    padding: 1.0em 0;
+    position: relative;
+    transition: all 0.2s linear 0s; }
+    .container .includedCover a span.icon-arrow-right,
+    .container .yourDetailsDisplay a span.icon-arrow-right,
+    .container .yourPropertyDetails a span.icon-arrow-right {
+      color: #E4753F;
+      font-size: 1.2em;
+      position: absolute;
+      top: 17px; }
+  .container .includedCover .buildingsCover,
+  .container .includedCover .contentsCover,
+  .container .includedCover .unspecifiedItemsCover,
+  .container .includedCover .emailDetails,
+  .container .includedCover .nameDetails,
+  .container .includedCover .mortgageProvider,
+  .container .includedCover .ownershipDetails,
+  .container .includedCover .typeOfProperty,
+  .container .includedCover .yearBuilt,
+  .container .includedCover .houseAlarm,
+  .container .includedCover .noClaims,
+  .container .includedCover .propertyAddress,
+  .container .yourDetailsDisplay .buildingsCover,
+  .container .yourDetailsDisplay .contentsCover,
+  .container .yourDetailsDisplay .unspecifiedItemsCover,
+  .container .yourDetailsDisplay .emailDetails,
+  .container .yourDetailsDisplay .nameDetails,
+  .container .yourDetailsDisplay .mortgageProvider,
+  .container .yourDetailsDisplay .ownershipDetails,
+  .container .yourDetailsDisplay .typeOfProperty,
+  .container .yourDetailsDisplay .yearBuilt,
+  .container .yourDetailsDisplay .houseAlarm,
+  .container .yourDetailsDisplay .noClaims,
+  .container .yourDetailsDisplay .propertyAddress,
+  .container .yourPropertyDetails .buildingsCover,
+  .container .yourPropertyDetails .contentsCover,
+  .container .yourPropertyDetails .unspecifiedItemsCover,
+  .container .yourPropertyDetails .emailDetails,
+  .container .yourPropertyDetails .nameDetails,
+  .container .yourPropertyDetails .mortgageProvider,
+  .container .yourPropertyDetails .ownershipDetails,
+  .container .yourPropertyDetails .typeOfProperty,
+  .container .yourPropertyDetails .yearBuilt,
+  .container .yourPropertyDetails .houseAlarm,
+  .container .yourPropertyDetails .noClaims,
+  .container .yourPropertyDetails .propertyAddress {
+    margin-bottom: 1.5em; }
+    .container .includedCover .buildingsCover label.labelnoPad,
+    .container .includedCover .contentsCover label.labelnoPad,
+    .container .includedCover .unspecifiedItemsCover label.labelnoPad,
+    .container .includedCover .emailDetails label.labelnoPad,
+    .container .includedCover .nameDetails label.labelnoPad,
+    .container .includedCover .mortgageProvider label.labelnoPad,
+    .container .includedCover .ownershipDetails label.labelnoPad,
+    .container .includedCover .typeOfProperty label.labelnoPad,
+    .container .includedCover .yearBuilt label.labelnoPad,
+    .container .includedCover .houseAlarm label.labelnoPad,
+    .container .includedCover .noClaims label.labelnoPad,
+    .container .includedCover .propertyAddress label.labelnoPad,
+    .container .yourDetailsDisplay .buildingsCover label.labelnoPad,
+    .container .yourDetailsDisplay .contentsCover label.labelnoPad,
+    .container .yourDetailsDisplay .unspecifiedItemsCover label.labelnoPad,
+    .container .yourDetailsDisplay .emailDetails label.labelnoPad,
+    .container .yourDetailsDisplay .nameDetails label.labelnoPad,
+    .container .yourDetailsDisplay .mortgageProvider label.labelnoPad,
+    .container .yourDetailsDisplay .ownershipDetails label.labelnoPad,
+    .container .yourDetailsDisplay .typeOfProperty label.labelnoPad,
+    .container .yourDetailsDisplay .yearBuilt label.labelnoPad,
+    .container .yourDetailsDisplay .houseAlarm label.labelnoPad,
+    .container .yourDetailsDisplay .noClaims label.labelnoPad,
+    .container .yourDetailsDisplay .propertyAddress label.labelnoPad,
+    .container .yourPropertyDetails .buildingsCover label.labelnoPad,
+    .container .yourPropertyDetails .contentsCover label.labelnoPad,
+    .container .yourPropertyDetails .unspecifiedItemsCover label.labelnoPad,
+    .container .yourPropertyDetails .emailDetails label.labelnoPad,
+    .container .yourPropertyDetails .nameDetails label.labelnoPad,
+    .container .yourPropertyDetails .mortgageProvider label.labelnoPad,
+    .container .yourPropertyDetails .ownershipDetails label.labelnoPad,
+    .container .yourPropertyDetails .typeOfProperty label.labelnoPad,
+    .container .yourPropertyDetails .yearBuilt label.labelnoPad,
+    .container .yourPropertyDetails .houseAlarm label.labelnoPad,
+    .container .yourPropertyDetails .noClaims label.labelnoPad,
+    .container .yourPropertyDetails .propertyAddress label.labelnoPad {
+      margin-bottom: 0.5em; }
+  .container .includedCover .claimsExcess,
+  .container .includedCover .specifiedItems,
+  .container .includedCover .ageDetails,
+  .container .includedCover .sameAddress,
+  .container .yourDetailsDisplay .claimsExcess,
+  .container .yourDetailsDisplay .specifiedItems,
+  .container .yourDetailsDisplay .ageDetails,
+  .container .yourDetailsDisplay .sameAddress,
+  .container .yourPropertyDetails .claimsExcess,
+  .container .yourPropertyDetails .specifiedItems,
+  .container .yourPropertyDetails .ageDetails,
+  .container .yourPropertyDetails .sameAddress {
+    margin-bottom: 0.5em; }
+  .container .includedCover .emailDetails label,
+  .container .yourDetailsDisplay .emailDetails label,
+  .container .yourPropertyDetails .emailDetails label {
+    padding: 0.9em 1em 0 0; }
+  .container .includedCover .btn,
+  .container .yourDetailsDisplay .btn,
+  .container .yourPropertyDetails .btn {
+    width: 300px;
+    margin: 0 auto; }
+
+.ageDetails {
+  padding-top: 1em; }
+
+.correspondenceAddress {
+  display: none; }
+
+/* Confirmation */
+.customerConfirmation p {
+  text-align: center;
+  border-bottom: 1px dashed #e4753f;
+  padding: 1em 0; }
+
+.policySummary {
+  margin-bottom: 0;
+  padding-bototm: 0; }
+  .policySummary p {
+    color: #053c59;
+    font-weight: bold; }
+  .policySummary fieldset label.labelnoPad {
+    margin-bottom: 0.5em; }
+
+.policyInfo p {
+  margin-bottom: 1em;
+  color: #343435; }
+
+/* Payment */
+.payment {
+  background: #053c59;
+  padding: 2em 0 0 0;
+  color: white;
+  overflow: hidden; }
+  .payment h2 {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1em 0 2em 0; }
+  .payment .monthly {
+    border: 1px solid white;
+    border-radius: 0.2em;
+    cursor: pointer;
+    text-align: right;
+    height: 160px; }
+    .payment .monthly p {
+      border-bottom: 1px solid white;
+      text-align: center;
+      padding: 0.75em 0; }
+      .payment .monthly p span {
+        border: 1px solid white;
+        padding: 0.1em 0em 0;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: 3px; }
+    .payment .monthly div {
+      padding-top: 1.25em;
+      padding-bottom: 0.60em; }
+      .payment .monthly div div.priceSection {
+        text-align: center;
+        margin: 0;
+        padding: 0; }
+        .payment .monthly div div.priceSection p.price {
+          border: 0;
+          display: inline-block;
+          font-size: 2.6em;
+          font-weight: bold;
+          padding: 0; }
+        .payment .monthly div div.priceSection p.priceCap {
+          display: inline-block;
+          width: 120px;
+          text-align: left;
+          border-bottom: 0;
+          margin-top: 0;
+          padding-top: 0; }
+        .payment .monthly div div.priceSection div.divider {
+          display: inline-block;
+          border-right: 1px solid white;
+          height: 2em;
+          margin: 0 1em; }
+        .payment .monthly div div.priceSection p.monthlyTerms {
+          border-bottom: 0;
+          clear: both;
+          text-align: center;
+          font-size: 0.8em;
+          padding-top: 0;
+          padding-bottom: 0.5em; }
+      .payment .monthly div span {
+        display: block;
+        text-align: center;
+        font-size: 0.8em;
+        padding: 0.5em 0 1.5em 0; }
+  .payment .annual {
+    border: 1px solid white;
+    border-radius: 0.2em;
+    cursor: pointer;
+    height: 160px; }
+    .payment .annual p {
+      text-align: center;
+      padding: 0.75em 0;
+      border-bottom: 1px solid white; }
+      .payment .annual p span {
+        border: 1px solid white;
+        padding: 0.1em 0 0;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: 3px; }
+    .payment .annual div p.price {
+      border: 0;
+      font-size: 2.6em;
+      font-weight: bold;
+      padding: 0.5em 0 0 0; }
+    .payment .annual div span {
+      display: block;
+      text-align: center;
+      font-size: 0.8em;
+      padding: 0.5em 0 1.5em 0; }
+  .payment .pricingDetailsLink {
+    color: white;
+    clear: both;
+    display: block;
+    padding-top: 1.5em;
+    text-align: center; }
+    .payment .pricingDetailsLink span {
+      position: relative;
+      top: 2px;
+      font-size: 1.1em;
+      color: white; }
+    .payment .pricingDetailsLink span.icon-arrow-down {
+      left: 150px; }
+  .payment .pricingDetailsLinkPanel p {
+    text-align: center; }
+
+.container .payment .selected {
+  border: 1px solid #053c59;
+  background: #00a4bf; }
+  .container .payment .selected p {
+    border-bottom: 1px solid #4dbfd2;
+    padding: 0.75em 0; }
+
+.edge:after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(#053c59 0%, transparent 0%), linear-gradient(135deg, white 33.33%, transparent 33.33%) 0 0%, white linear-gradient(45deg, white 33.33%, #053c59 33.33%) 0 0%;
+  background: -webkit-linear-gradient(#053c59 0%, transparent 0%), -webkit-linear-gradient(135deg, white 33.33%, transparent 33.33%) 0 0%, white -webkit-linear-gradient(45deg, #053c59 33.33%, #053c59 33.33%) 0 0%;
+  background: -o-linear-gradient(#053c59 0%, transparent 0%), -o-linear-gradient(135deg, white 33.33%, transparent 33.33%) 0 0%, white -o-linear-gradient(45deg, white 33.33%, #053c59 33.33%) 0 0%;
+  background: -moz-linear-gradient(#053c59 0%, transparent 0%), -moz-linear-gradient(135deg, white 33.33%, transparent 33.33%) 0 0%, white -moz-linear-gradient(45deg, white 33.33%, #053c59 33.33%) 0 0%;
+  background-repeat: repeat-x;
+  background-size: 0px 100%, 15px 27px, 15px 27px; }
+
+.payMonthly .paymentBreakdown,
+.payAnnually .paymentBreakdown {
+  text-align: right; }
+  .payMonthly .paymentBreakdown h4,
+  .payAnnually .paymentBreakdown h4 {
+    color: #343435;
+    border-bottom: 1px dashed #E4753F;
+    margin-bottom: 1em;
+    padding-bottom: 1em; }
+    .payMonthly .paymentBreakdown h4 span,
+    .payAnnually .paymentBreakdown h4 span {
+      font-weight: normal;
+      font-size: 0.8em; }
+  .payMonthly .paymentBreakdown span,
+  .payAnnually .paymentBreakdown span {
+    color: #053c59;
+    font-weight: bold; }
+  .payMonthly .paymentBreakdown p,
+  .payAnnually .paymentBreakdown p {
+    margin-bottom: 0.5em;
+    color: #343435; }
+.payMonthly .paymentBreakdownDescription,
+.payAnnually .paymentBreakdownDescription {
+  padding-bottom: 1em; }
+  .payMonthly .paymentBreakdownDescription p,
+  .payAnnually .paymentBreakdownDescription p {
+    font-size: 0.8em;
+    color: #343435;
+    margin-bottom: 1em; }
+    .payMonthly .paymentBreakdownDescription p a,
+    .payAnnually .paymentBreakdownDescription p a {
+      font-weight: bold; }
+
+.container .payAnnually {
+  width: 50%;
+  margin: 0 auto; }
+  .container .payAnnually h4 {
+    text-align: center; }
+  .container .payAnnually p {
+    text-align: center; }
+
+.payMonthlyDetails {
+  padding-top: 0.5em;
+  padding-bottom: 0em; }
+  .payMonthlyDetails p {
+    font-weight: bold; }
+  .payMonthlyDetails .typeOfPayment {
+    color: #053c59; }
+
+.payAnnuallyOptions {
+  padding-bottom: 0; }
+  .payAnnuallyOptions fieldset {
+    padding-bottom: 0;
+    margin-bottom: 0; }
+
+.payMonthly {
+  padding-top: 0.5em; }
+
+.payAnnuallyDetails img {
+  position: relative;
+  top: 0.8em; }
+
+.payAnnuallyOptions,
+.payAnnuallyDetails,
+.payAnnually {
+  display: none; }
+
+.documentlistHead {
+  font-weight: bold;
+  font-size: 0.9em;
+  margin: 1em 0;
+  text-align: center; }
+
+.documentList {
+  list-style-type: none;
+  float: left;
+  text-align: center;
+  width: 50%; }
+  .documentList li {
+    font-size: 0.9em;
+    margin-bottom: 1em; }
+
+/* Confirmation */
+.customerConfirmation p {
+  text-align: center;
+  border-bottom: 1px dashed #e4753f;
+  padding: 1em 0; }
+
+.policySummary p {
+  color: #053c59;
+  font-weight: bold; }
+
+.policyInfo p {
+  margin-bottom: 1em; }
+
+/* ==================================================================================================================== */
+/* ! MEDIA Q.
+/* ==================================================================================================================== */
+@media only screen and (max-width: 1200px) {
+  form section fieldset.BOISpecialField label.labelnoPad {
+    padding-left: 1em; } }
+@media only screen and (max-width: 1024px) {
+  .bannerSection p {
+    width: 60%; }
+
+  .addSpecItemHidden {
+    padding-top: 0;
+    padding-bottom: 0; } }
+@media only screen and (max-width: 870px) {
+  form section.submitArea.centerButton input[type="submit"] {
+    width: 60%; }
+
+  form section fieldset.BOISpecialField label.labelnoPad {
+    padding-left: 1em; } }
+@media only screen and (max-width: 855px) {
+  header .innerHeader nav {
+    position: relative; }
+    header .innerHeader nav ul li {
+      margin: 0;
+      padding: 0 2em 0 0;
+      background: url("../images/nav-mobile.png") repeat-x center 14px; }
+      header .innerHeader nav ul li.step4 {
+        background: transparent;
+        padding: 0; }
+      header .innerHeader nav ul li span.text {
+        display: none; }
+
+  .bannerSection a {
+    margin: 0; }
+  .bannerSection p {
+    width: 65%;
+    margin-right: 2em; }
+
+  form section fieldset.BOISpecialField label.labelnoPad {
+    padding-left: 1em; }
+
+  .innerSectionNoPad {
+    padding: 0 1em 1.5em; }
+
+  .documentlistHead {
+    margin-top: 0; } }
+@media only screen and (max-width: 790px) {
+  form section {
+    padding: 0 1em 1.5em; }
+    form section article.redSection {
+      float: left;
+      width: 100%; }
+    form section fieldset {
+      padding: 1.5em 0 0; }
+      form section fieldset.hashtagFAIL {
+        margin: 1em 0 0; }
+        form section fieldset.hashtagFAIL label {
+          padding: 0 0 0.5em; }
+      form section fieldset label {
+        width: 100%;
+        text-align: left;
+        padding: 0.5em 0; }
+      form section fieldset div.inputArea {
+        float: none;
+        width: 100%; }
+    form section.submitArea {
+      margin: 0 1em; }
+
+  .buttonBox {
+    float: none;
+    width: 100%;
+    position: relative; }
+
+  .formSection {
+    padding-top: 1em; }
+
+  .bannerSection a {
+    margin: 0; }
+  .bannerSection p {
+    width: 70%;
+    margin-right: 2em; }
+
+  form section fieldset.BOISpecialField div.promoQuestion label {
+    width: 50%;
+    text-align: right; }
+  form section fieldset.BOISpecialField div.carPromoQuestion label {
+    width: 50%;
+    text-align: right; }
+  form section fieldset.BOISpecialField div.promoCodeField fieldset div.inputArea {
+    width: 50%;
+    float: right;
+    display: block;
+    margin-bottom: 0.5em; }
+  form section fieldset.BOISpecialField div fieldset {
+    padding: 0.3em 0; }
+    form section fieldset.BOISpecialField div fieldset label {
+      width: 50%;
+      text-align: right;
+      padding: 0 1em 0 0; }
+    form section fieldset.BOISpecialField div fieldset div {
+      float: left;
+      width: 50%; }
+
+  .dcAgreementChecks {
+    padding-top: 1em; }
+
+  .container .row .footerContents .contactBox, .container .row .footerContents .finePrint {
+    float: none;
+    margin: 2em auto 1.5em auto;
+    min-width: 260px; }
+  .container .row .footerContents .finePrint {
+    float: none;
+    margin: 0 auto;
+    min-width: 260px; }
+
+  .unSpecItemField div.inputArea {
+    margin-bottom: 1em; }
+
+  .coverIncludes .buildCvr, .coverIncludes .contentCvr.last {
+    margin: 0 auto;
+    position: relative;
+    padding: 0 0 1em 0;
+    color: #343435;
+    float: none;
+    width: 100%;
+    text-align: center; }
+    .coverIncludes .buildCvr span, .coverIncludes .contentCvr.last span {
+      margin-left: 0.2em;
+      font-weight: bold; }
+  .coverIncludes .quarters.last .clearButton {
+    margin: 0 auto; }
+
+  .removeItemlink {
+    float: right;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin: 1em auto 0 auto; }
+
+  form .excessSection {
+    padding-bottom: 1.5em; }
+
+  form section.excessSection fieldset div.inputArea select {
+    max-width: 240px; }
+
+  form section.addSpecItemHidden {
+    padding: 0 1em; }
+
+  .container .row .footerContents .finePrint p {
+    text-align: center; } }
+@media only screen and (max-width: 650px) {
+  .dcAgreementChecks .dcPolicyDocumentAgreementList {
+    padding: 0; }
+    .dcAgreementChecks .dcPolicyDocumentAgreementList a {
+      display: block;
+      margin-bottom: 1em; } }
+@media only screen and (max-width: 600px) {
+  form section.submitArea {
+    padding: 2em 1em; }
+    form section.submitArea.centerButton input[type="submit"] {
+      width: 100%; }
+    form section.submitArea input[type="submit"] {
+      display: block;
+      float: none;
+      margin: 0 0 1em;
+      text-align: center;
+      width: 100%; }
+  form section a.back {
+    display: block;
+    float: none;
+    margin: 0 0 1em;
+    text-align: center;
+    width: 100%; }
+
+  .bannerSection a {
+    margin: 0; }
+    .bannerSection a .bG-image {
+      background-image: none; }
+  .bannerSection p {
+    width: 80%;
+    margin: 0 10%; }
+
+  form section fieldset.BOISpecialField {
+    padding: 1.5em 1em;
+    margin: 2em 0 1em 0;
+    width: 100%; }
+    form section fieldset.BOISpecialField a {
+      width: 100%; }
+      form section fieldset.BOISpecialField a img {
+        width: 100%; }
+
+  .quoteSummary {
+    padding: 2em 0; }
+    .quoteSummary .halfs {
+      width: 50%;
+      float: left;
+      clear: none;
+      margin-bottom: 1.5em; }
+    .quoteSummary .price {
+      font-size: 3em;
+      padding: 0 0.3em 0 0; }
+    .quoteSummary .per {
+      font-size: 1.3em;
+      padding: 0 1.2em 0 0; }
+    .quoteSummary .payOption {
+      width: 80%;
+      font-size: 01em;
+      padding: 1em 0 0 0.8em; }
+    .quoteSummary .payOptionPrice {
+      width: 50%;
+      margin: 1.2em auto 0 auto;
+      padding: 1.5em 0 1.2em 0; }
+
+  .clearButton {
+    max-width: 240px; }
+
+  .sixteenth, .thirds, .quarters, .fifths, .halfs, .threeQuarters, .wholes {
+    margin: 0;
+    float: none;
+    min-height: 1px;
+    width: 100%;
+    clear: both; }
+
+  .additionalCoverSection .innerHeading, .unspecifiedItemSection .innerHeading,
+  .specifiedItemSection .innerHeading {
+    margin: 0;
+    padding: 1.5em 0; }
+
+  .additionalCoverSection .quarters.last {
+    margin-bottom: 1em; }
+
+  .specItemAddRemoveBox #aggiungiInput {
+    margin: 0 0 1em 0; }
+
+  .specItemEntryBox .removeSpecItem {
+    margin: 1em 0; }
+
+  .disclaimer {
+    width: 100%;
+    padding-top: 1.5em;
+    margin: 0 auto; }
+
+  .readMoreLink {
+    margin: 1.5em 0;
+    font-size: 0.9em; }
+
+  .readMoreTxt {
+    margin-bottom: 2em; }
+
+  .quoteResults {
+    padding-bottom: 0.5em; }
+
+  .quoteResultSection .wholes {
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1.5em; }
+  .quoteResultSection .halfs {
+    padding-bottom: 0; }
+  .quoteResultSection #updatePremiumBtn {
+    margin: 0 auto 1em auto;
+    min-width: 200px;
+    width: 100%; }
+
+  .premiumTotals {
+    padding-bottom: 0.5em; }
+
+  .unspecifiedItemSection {
+    padding-bottom: 1.5em; }
+    .unspecifiedItemSection .quarters.last fieldset {
+      padding-bottom: 0; }
+
+  .unSpecItemField {
+    padding-top: 0; }
+    .unSpecItemField div.inputArea {
+      max-width: 240px;
+      margin-bottom: 1.5em; }
+
+  .coverIncludes .quarters.last {
+    padding-top: 0.5em; } }
+@media only screen and (max-width: 573px) {
+  body {
+    background: white; }
+
+  h1.topHeading {
+    color: #053c59;
+    text-align: center; }
+
+  header {
+    background: white; }
+    header .innerHeader a.logo {
+      background: #ffffff;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, white 0%, #f1f1f1 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f1f1f1));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, white 0%, #f1f1f1 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, white 0%, #f1f1f1 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, white 0%, #f1f1f1 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, white 0%, #f1f1f1 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 );
+      /* IE6-9 */
+      text-align: center;
+      width: 100%;
+      display: block;
+      border-bottom: 1px solid #cccccc; }
+    header .innerHeader nav {
+      position: relative;
+      padding: 0 3% 0 15%;
+      display: block;
+      float: none; }
+      header .innerHeader nav ul li {
+        margin: 0;
+        padding: 0 2em 0 0;
+        width: 25%;
+        background: url("../images/nav-mobile.png") repeat-x center 14px; }
+        header .innerHeader nav ul li.step4 {
+          background: transparent;
+          padding: 0; }
+        header .innerHeader nav ul li span.text {
+          display: none; }
+
+  form.shadow {
+    box-shadow: 0 0 0; }
+
+  h1.topHeading {
+    padding: 1em 0 0 0; }
+
+  .bannerSection a {
+    margin: 0; }
+    .bannerSection a .bG-image {
+      background-image: none; }
+  .bannerSection p {
+    width: 80%;
+    margin: 0 10%; }
+
+  form section fieldset.BOISpecialField {
+    padding: 1.5em 1em;
+    margin: 2em 0 1em 0;
+    width: 100%; }
+    form section fieldset.BOISpecialField a {
+      width: 100%; }
+      form section fieldset.BOISpecialField a img {
+        width: 100%; }
+    form section fieldset.BOISpecialField label {
+      display: block;
+      width: 100%;
+      font-size: 1em;
+      margin-bottom: 1em; }
+    form section fieldset.BOISpecialField div {
+      float: left; }
+      form section fieldset.BOISpecialField div input {
+        width: 1em;
+        height: 2em;
+        float: left;
+        margin: 0.25em 1em 0.5em 0;
+        clear: left; }
+      form section fieldset.BOISpecialField div label {
+        display: block;
+        width: 90%;
+        float: right; } }
+@media only screen and (max-width: 500px) {
+  h1.topHeading {
+    padding: 0.5em 0 0 0; }
+
+  .bannerSection p {
+    width: 98%;
+    margin: 0 1%; }
+
+  form section fieldset.BOISpecialField {
+    padding: 1.5em 1em;
+    margin: 2em 0 1em 0;
+    width: 100%; }
+    form section fieldset.BOISpecialField a {
+      width: 100%; }
+      form section fieldset.BOISpecialField a img {
+        width: 100%; }
+
+  .quoteSummary {
+    padding: 2em 0; }
+    .quoteSummary .price {
+      font-size: 2.5em;
+      padding: 0 0.3em 0 0; }
+    .quoteSummary .per {
+      font-size: 1.1em; }
+    .quoteSummary .payOption {
+      width: 80%;
+      font-size: 0.9em;
+      padding: 0.8em 0 0 0.8em; }
+
+  form section fieldset.BOISpecialField .promoQuestion label.labelnoPad {
+    width: 100%;
+    text-align: left;
+    padding-left: 0; }
+  form section fieldset.BOISpecialField .promoQuestion div.inputArea {
+    margin-bottom: 1em; }
+    form section fieldset.BOISpecialField .promoQuestion div.inputArea label {
+      margin-right: 1em; }
+  form section fieldset.BOISpecialField .carPromoQuestion label.labelnoPad {
+    width: 100%;
+    text-align: left;
+    padding-left: 0; }
+  form section fieldset.BOISpecialField .carPromoQuestion div.inputArea {
+    margin-bottom: 1em; }
+    form section fieldset.BOISpecialField .carPromoQuestion div.inputArea label {
+      margin-right: 1em; }
+    form section fieldset.BOISpecialField .carPromoQuestion div.inputArea input[type="text"] {
+      width: 100%; }
+  form section fieldset.BOISpecialField .promoCodeField div.inputArea label.radioHor {
+    margin-right: 1em; }
+  form section fieldset.BOISpecialField .promoCodeField div.inputArea input[type="text"] {
+    width: 100%; } }
+@media only screen and (max-width: 395px) {
+  form section fieldset.hashtagFAIL div a.show .showHelp {
+    display: block;
+    font-size: 1em;
+    padding: 0.3em 0 0; }
+  form section fieldset.hashtagFAIL div a.show .hideHelp {
+    display: none;
+    font-size: 1em;
+    padding: 0; }
+  form section fieldset div.inputArea input[type="text"].inputxSmall,
+  form section fieldset div.inputArea input[type="email"].inputxSmall,
+  form section fieldset div.inputArea input[type="password"].inputxSmall,
+  form section fieldset div.inputArea select.inputxSmall,
+  form section fieldset div.inputArea textarea.inputxSmall {
+    width: 60%; }
+  form section fieldset div.inputArea input[type="text"].inputDay, form section fieldset div.inputArea input[type="text"].inputMonth, form section fieldset div.inputArea input[type="text"].inputYear,
+  form section fieldset div.inputArea input[type="email"].inputDay,
+  form section fieldset div.inputArea input[type="email"].inputMonth,
+  form section fieldset div.inputArea input[type="email"].inputYear,
+  form section fieldset div.inputArea input[type="password"].inputDay,
+  form section fieldset div.inputArea input[type="password"].inputMonth,
+  form section fieldset div.inputArea input[type="password"].inputYear,
+  form section fieldset div.inputArea select.inputDay,
+  form section fieldset div.inputArea select.inputMonth,
+  form section fieldset div.inputArea select.inputYear,
+  form section fieldset div.inputArea textarea.inputDay,
+  form section fieldset div.inputArea textarea.inputMonth,
+  form section fieldset div.inputArea textarea.inputYear {
+    width: 32.2%; }
+  form section fieldset div.inputArea input[type="text"].inputSmall,
+  form section fieldset div.inputArea input[type="email"].inputSmall,
+  form section fieldset div.inputArea input[type="password"].inputSmall,
+  form section fieldset div.inputArea select.inputSmall,
+  form section fieldset div.inputArea textarea.inputSmall {
+    width: 70%; }
+  form section fieldset div.inputArea input[type="text"].inputMedium, form section fieldset div.inputArea input[type="text"].inputLarge,
+  form section fieldset div.inputArea input[type="email"].inputMedium,
+  form section fieldset div.inputArea input[type="email"].inputLarge,
+  form section fieldset div.inputArea input[type="password"].inputMedium,
+  form section fieldset div.inputArea input[type="password"].inputLarge,
+  form section fieldset div.inputArea select.inputMedium,
+  form section fieldset div.inputArea select.inputLarge,
+  form section fieldset div.inputArea textarea.inputMedium,
+  form section fieldset div.inputArea textarea.inputLarge {
+    width: 100%; }
+  form section fieldset div.inputArea a.show, form section fieldset div.inputArea a.hide {
+    position: relative;
+    padding: 1em 0 1.5em;
+    right: 0;
+    top: 9px; }
+  form section fieldset div.inputArea .slidingDiv {
+    margin: 1em 0 0; }
+
+  fieldset .labelnoPad {
+    margin-bottom: 1em; }
+
+  .btn.innerForm {
+    padding: 1em 1em;
+    width: 100%;
+    float: none;
+    text-align: center; }
+
+  .bannerSection a {
+    margin: 1em 0 1em 0; }
+    .bannerSection a .bG-image {
+      background-image: none; }
+  .bannerSection p {
+    float: none;
+    width: 100%;
+    font-size: 0.95em;
+    font-weight: bold;
+    padding: 0; }
+
+  .deskHead {
+    display: none; }
+
+  .mobHead {
+    display: block; }
+
+  .dcAgreementChecks {
+    padding-top: 1em; }
+    .dcAgreementChecks h3 {
+      text-align: left; }
+    .dcAgreementChecks .txtMask {
+      width: 65%; }
+    .dcAgreementChecks .dcEligibility {
+      margin-right: 2em; }
+      .dcAgreementChecks .dcEligibility p {
+        font-size: 0.75em; }
+    .dcAgreementChecks fieldset label {
+      width: 85%;
+      font-size: 0.9em; }
+    .dcAgreementChecks .disclaimerText {
+      font-size: 0.65em;
+      padding-right: 1em; }
+
+  .dcPolicyDocumentAgreementList a {
+    display: block;
+    margin-bottom: 1em; }
+
+  .container .row .footerContents {
+    padding: 1em 1em 2em 1em; }
+    .container .row .footerContents .contactBox .innerBox .holder {
+      left: 0.5em; }
+
+  form section fieldset div.inputArea a.show, form section fieldset div.inputArea a.hide {
+    padding: 0; }
+
+  .customerDetails {
+    padding: 0.5em 0 1em 0; }
+    .customerDetails p {
+      width: 100%;
+      float: none; }
+      .customerDetails p.customerName {
+        text-align: center;
+        margin-bottom: 0.5em; }
+      .customerDetails p.customerPolicy {
+        text-align: center; }
+
+  .nudgeMessageSection {
+    padding-bottom: 2em; }
+
+  .coverIncludes {
+    padding-bottom: 0;
+    margin-bottom: 1em; }
+    .coverIncludes .threeQuarters, .coverIncludes .quarters {
+      width: 100%;
+      float: none;
+      clear: both;
+      margin: 0; }
+    .coverIncludes .contentCvr {
+      margin-bottom: 1em; }
+    .coverIncludes .clearButton {
+      margin: 1em auto; }
+
+  .buildCvr, .contentCvr {
+    float: none;
+    width: 100%;
+    padding: 0.5em 0;
+    text-align: center; }
+
+  .customerDetails {
+    padding-bottom: 1.5em; }
+
+  .additionalCoverSection .quarters.last {
+    margin: 1em 0 0.5em 0; }
+
+  .unspecifiedItemSection {
+    padding-bottom: 1.5em; }
+    .unspecifiedItemSection .quarters.last {
+      margin: 0; }
+      .unspecifiedItemSection .quarters.last fieldset {
+        padding-top: 0;
+        padding-bottom: 0em; }
+
+  .addSpecItemMain .threeQuarters p, .excessSection .threeQuarters p {
+    margin: 0em 0 1.5em 0; }
+  .addSpecItemMain .quarters.last, .excessSection .quarters.last {
+    margin: 0 0 0 0; }
+    .addSpecItemMain .quarters.last .clearButton, .addSpecItemMain .quarters.last input, .excessSection .quarters.last .clearButton, .excessSection .quarters.last input {
+      margin-top: 1em; }
+
+  .addSpecItemHidden {
+    padding: 0 2em; }
+
+  .qsNudgeMessage {
+    margin: 2em 0 0 0; }
+
+  form .wholes section.submitArea.centerButton input[type="submit"] {
+    width: 100%;
+    font-size: 1.15em;
+    padding: 0.8em 0; }
+
+  form section.continueLinkSection {
+    padding-bottom: 0.5em; }
+    form section.continueLinkSection .submitArea {
+      padding: 1em 0 2em 0;
+      margin: 1em auto 0 auto;
+      width: 100%;
+      max-width: 240px; }
+
+  .policyDocuments {
+    padding-bottom: 0; }
+    .policyDocuments .docListBox .sixteenth {
+      width: 0; }
+    .policyDocuments .docListBox .threeQuarters {
+      width: 100%; }
+      .policyDocuments .docListBox .threeQuarters .documentlistHead {
+        margin-bottom: 1.5em; }
+      .policyDocuments .docListBox .threeQuarters .documentList {
+        float: none;
+        width: 80%;
+        margin: 0 auto; }
+        .policyDocuments .docListBox .threeQuarters .documentList li {
+          margin-bottom: 1em; }
+
+  .container .row .footerContents .sixcol {
+    padding: 0; }
+    .container .row .footerContents .sixcol .contactBox {
+      margin: 0 auto 2em auto;
+      width: 100%;
+      min-width: 190px; }
+    .container .row .footerContents .sixcol .finePrint {
+      width: 90%;
+      min-width: 180px;
+      margin: 0.5em auto; }
+
+  .quoteSummary {
+    padding: 2em 0; }
+    .quoteSummary .price {
+      font-size: 2em;
+      padding: 0 0.3em 0 0; }
+    .quoteSummary .per {
+      font-size: 1em; }
+    .quoteSummary .payOption {
+      width: 80%;
+      font-size: 0.8em;
+      padding: 0.8em 0 0 0.8em; }
+
+  form#footerContactForm section#contactFormTop a span {
+    font-size: 1.05em; }
+  form#footerContactForm section#contactFormTop a img {
+    top: -1.25em; } }

@@ -1,0 +1,11 @@
+Please Select
+Semi detached house
+Semi detached house with basement
+Detached house
+Detached house with basement
+Bungalow
+Bungalow with basement
+Terraced house
+Terraced house with basement
+Purpose built apartment
+Purpose built duplex

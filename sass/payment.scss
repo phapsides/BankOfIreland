@@ -1,0 +1,333 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0;outline:none;}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block;}a img{border:0;}figure{position:relative;}figure img{width:100%;}
+
+
+/* COLOR */
+$black: #000;
+$white: #fff;
+$lightRed: #fae4e6;
+$darkRed: #cc0100;
+$grey: #ccc;
+$darkGrey: #343435;
+$lightBlue: #e3f0f8;
+$darkBlue: #053c59;
+$aqua: #00a4bf;
+$orange: #e4753f;
+
+/* WIDTHS */
+$width10: 10%;
+$width20: 20%;
+$width30: 30%;
+$width40: 40%;
+$width45: 45%;
+$width50: 50%;
+$width60: 60%;
+$width70: 70%;
+$width80: 80%;
+$width90: 90%;
+$width100: 100%;
+
+/* FLOATS & ALIGNMENT **/
+$left: left;
+$right: right;
+$none: none;
+
+/* MARGINS, PADDINGS & FONTS */
+$spaceHalf: 0.5em;
+$spaceOne: 1em;
+$spaceOneHalf: 1.5em;
+$spaceTwo: 2em;
+$spaceTwoHalf: 2.5em;
+$spaceThree: 3em;
+
+$font8: 0.8em;
+$font9: 0.9em;
+$font1: 1em;
+$font1-25: 1.25em;
+$font1-5: 1.5em;
+$font2: 2em;
+$font3: 3em;
+$fontArial: "Arial", sans-serif;
+
+.payment {
+	background: $darkBlue;
+	padding: 2em 0;
+	color: $white;
+	overflow: hidden;
+	h2 {
+		text-align: center;
+		font-size: $font1;
+		font-weight: normal;
+		margin-bottom: $spaceOneHalf;
+	}
+	.monthly {
+		border: 1px solid $white;
+		border-radius: 0.2em;
+		cursor: pointer;
+		text-align: $right;
+		height: 150px;
+		p {
+			border-bottom: 1px solid $white;
+			text-align: center;
+			padding: 0.75em 0;
+			span {
+				border: 1px solid $white;
+				padding: 0.1em 0em 0;
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				position: relative;
+				top: 3px;
+			}
+		}
+		div {
+			padding-top: 1.25em;
+			padding-bottom: 0.60em;
+			div.priceSection {
+				text-align: center;
+				margin: 0;
+				padding: 0;
+				p.price{
+				border: 0;
+				display: inline-block;
+				font-size: 2.2em;
+				font-weight: bold;
+				padding: 0;
+				}
+				p.priceCap {
+					display: inline-block;
+					width: 120px;
+					text-align:left;
+					border-bottom: 0;
+					margin-top:0;
+					padding-top:0;
+				}
+				div.divider {
+					display: inline-block;
+					border-right: 1px solid $white;
+					height: $spaceTwo;
+					margin: 0 1em;
+				}
+				p.monthlyTerms {
+					border-bottom:0;
+					clear:both;
+					text-align: center;
+					font-size: $font8;
+					padding-top:0;
+					padding-bottom: $spaceHalf;
+				}
+
+			}
+			span {
+				display: block;
+				text-align: center;
+				font-size: $font8;
+				padding: $spaceHalf 0 $spaceOneHalf 0;
+			}
+		}
+	}
+	.annual {
+		border: 1px solid $white;
+		border-radius: 0.2em;
+		cursor: pointer;
+		height: 150px;
+		p {
+			text-align: center;
+			padding: 0.75em 0;
+			border-bottom: 1px solid $white;
+			span {
+				border: 1px solid $white;
+				padding: 0.1em 0 0;
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				position: relative;
+				top: 3px;
+			}
+		}
+		div {
+			p.price{
+				border: 0;
+				font-size: 2.2em;
+				font-weight: bold;
+				padding: $spaceHalf 0 0 0;
+			}
+			span {
+				display: block;
+				text-align: center;
+				font-size: $font8;
+				padding: $spaceHalf 0 $spaceOneHalf 0;
+			}
+		}
+	}
+	.pricingDetailsLink {
+		color: $white;
+		clear: both;
+    display:block;
+    padding-top: $spaceOneHalf;
+    text-align: center;
+    span {
+      position:relative;
+      top:2px;
+      font-size:1.1em;
+      color:$white;
+    }
+    span.icon-arrow-down {
+    	left: 150px;
+    }
+
+  }
+  .pricingDetailsLinkPanel p {
+		text-align: center;
+  } 
+}
+
+.container .payment {
+	.selected {
+		border: 1px solid $darkBlue;
+		background:#00a4bf;
+		p {
+			border-bottom: 1px solid #4dbfd2;
+			padding: 0.75em 0;
+		}
+	}
+}
+
+
+
+.edge:after {
+	content: " ";
+  display:block;
+  width:100%;
+  height:20px;
+  background: linear-gradient($darkBlue 0%, transparent 0%), linear-gradient(135deg, $white 33.33%, transparent 33.33%) 0 0%, $white linear-gradient(45deg, $white 33.33%, $darkBlue 33.33%) 0 0%;
+  background: -webkit-linear-gradient($darkBlue 0%, transparent 0%), -webkit-linear-gradient(135deg, $white 33.33%, transparent 33.33%) 0 0%, $white -webkit-linear-gradient(45deg, $darkBlue 33.33%, $darkBlue 33.33%) 0 0%;
+  background: -o-linear-gradient($darkBlue 0%, transparent 0%), -o-linear-gradient(135deg, $white 33.33%, transparent 33.33%) 0 0%, $white -o-linear-gradient(45deg, $white 33.33%, $darkBlue 33.33%) 0 0%;
+  background: -moz-linear-gradient($darkBlue 0%, transparent 0%), -moz-linear-gradient(135deg, $white 33.33%, transparent 33.33%) 0 0%, $white -moz-linear-gradient(45deg, $white 33.33%, $darkBlue 33.33%) 0 0%;
+  background-repeat: repeat-x;
+  background-size: 0px 100%, 15px 27px, 15px 27px;
+}
+
+
+.payMonthly,
+.payAnnually {
+	.paymentBreakdown {
+		text-align: right;
+		h4 {
+			color: #343435;
+			border-bottom: 1px dashed #E4753F;
+			margin-bottom: 1em;
+			padding-bottom: 1em;
+			span {
+				font-weight: normal;
+				font-size: $font8;
+			}
+		}
+		span {
+			color: $darkBlue;
+			font-weight: bold;
+		}
+		p {
+			margin-bottom: $spaceHalf;
+			color: #343435;
+		}
+	}
+	.paymentBreakdownDescription {
+		p {
+			font-size: $font8;
+			color: #343435;
+			margin-bottom: $spaceOne;
+			a {
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.container .payAnnually {
+	width: 50%;
+	margin: 0 auto;
+	h4{
+		text-align: center;
+	}
+	p {
+		text-align: center;
+	}
+}
+
+.payMonthlyDetails {
+	p {
+		font-weight: bold;
+	}
+	.typeOfPayment {
+		color: $darkBlue;
+	}
+}
+
+.payAnnuallyOptions,
+.payAnnuallyDetails,
+.payAnnually {
+	display: none;
+}
+
+ .documentlistHead {
+    font-weight:bold;
+    font-size: $font9;
+    margin:1em 0;
+    text-align: center;
+  }
+
+  .documentList {
+    list-style-type:none;
+    float:left;
+    text-align:center;
+    width:50%;
+    li {
+      font-size: $font9;
+      margin-bottom:1em;
+    }
+  }
+
+/* Confirmation */
+
+.customerConfirmation {
+	p {
+		text-align: center;
+		border-bottom: 1px dashed $orange;
+		padding: $spaceOne 0;
+	}
+}
+
+.policySummary {
+	p {
+		color: $darkBlue;
+		font-weight: bold;
+	}
+}
+
+.policyInfo {
+	p {
+		margin-bottom: $spaceOne;
+	}
+}
+
+@media only screen and (max-width: 790px) {
+	.payment .annual {
+		margin-top: 30px;
+	}
+
+.payMonthly,
+.payAnnually {
+	.paymentBreakdown {
+		text-align: left;
+	}
+}
+
+}
+
+
+
+
+
+
+
+
